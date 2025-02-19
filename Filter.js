@@ -3,7 +3,7 @@ const products = [
     {
         id: 1,
         name: "Men Shirt",
-        image: "../img/Men-catagories/shirt_4.webp",
+        image: "https://your-vercel-domain.com/img/Men-catagories/shirt_4.webp",
         price: "$49.99",
         discountPrice: "$39.99",
         category: "men",
@@ -655,7 +655,7 @@ const productCard = document.createElement("div");
 productCard.className = "group bg-white h-76 p-4 rounded-lg shadow-md text-center relative";
 
 productCard.innerHTML = `
-    <img src="${product.image}" alt="not found" class="w-full h-auto object-cover rounded-lg">
+    <img src="${product.image}" alt="${product.name}" class="w-full h-auto object-cover rounded-lg">
     
     <!-- Name, Wishlist & Price Container -->
     <div class="mt-2 transition-opacity duration-300 relative">
@@ -712,7 +712,7 @@ const wishlistItem = document.createElement("div");
 wishlistItem.className = "bg-white p-4 rounded-lg shadow-md text-center flex items-center gap-4 mt-2";
 
 wishlistItem.innerHTML = `
-     <img src="${product.image}" alt="not found" class="w-full h-auto object-cover rounded-lg">
+     <img src="${product.image}" alt="${product.name}" class="w-full h-auto object-cover rounded-lg">
     <div class="text-left">
         <h3 class="text-lg font-semibold">${product.name}</h3>
         <p class="text-red-500 text-xl font-bold">${product.discountPrice} 
