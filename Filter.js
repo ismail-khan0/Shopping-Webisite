@@ -14,7 +14,7 @@ const products = [
   {
     id: 2,
     name: "Men Shirt",
-    image: "img/Pic1.webp",
+    image: "/img/pic1.webp",
     price: "$59.99",
     discountPrice: "$44.99",
     category: "men",
