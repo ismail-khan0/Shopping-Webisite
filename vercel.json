@@ -1,16 +1,6 @@
 {
     "rewrites": [
-      {
-        "source": "/some-path",
-        "destination": "/api/handle-request"
-      }
-    ],
-    "redirects": [
-      {
-        "source": "/old-route",
-        "destination": "/new-route",
-        "permanent": true
-      }
+      { "source": "/(.*)", "destination": "/index.html" }
     ]
   }
   
