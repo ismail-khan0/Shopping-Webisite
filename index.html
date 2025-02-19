@@ -4,16 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
 
-
-    <title>Mailo Collection</title>
-    <link rel="stylesheet" href="/Style.css">
-
+    <title>Tailwind CSS Carousel</title>
 </head>
 
 <body class="bg-[]  font-family: Arial, sans-serif;">
@@ -23,7 +17,7 @@
     <nav id="header"
         class="fixed top-0 left-0 w-full z-50 bg-white border-gray-200 shadow-sm shadow-gray-200/50 dark:bg-gray-900">
         <div class=" max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
-            <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img class="ml-8 w-16 h-16" src="Img/Logo.jpeg" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
             </a>
@@ -195,7 +189,7 @@
                     </li>
 
                     <li class="relative group">
-                        <a href="Women.html" id="women"
+                        <a href="women.html" id="women"
                             class="block relative px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent  md:py-7 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                             Women
                             <span class="absolute bottom-0 left-0 w-0 h-[3px] bg-pink-600  group-hover:w-full"></span>
@@ -583,7 +577,7 @@
                             <h1 class="font-bold text-xl">Well Come</h1>
                             <p class="text-[#535665]">To access account and manage orders</p>
                             <div class="mt-2">
-                                <button onclick="window.location.href='Signin.html'" class=" py-1 px-4 text-red-600 rounded-sm 
+                                <button class=" py-1 px-4 text-red-600 rounded-sm 
                                 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600 md:py-1 border rounded-sm hover:ring-none hover:border-red-600 focus:outline-none 
                                 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 
                                 dark:hover:text-white md:dark:hover:bg-transparent">Log In / Sign UP </button>
@@ -643,19 +637,18 @@
 
     <!-- --------------------------home Page------------------------------- -->
     <div  id="home" class="flex flex-col justify-center items-center w-full mt-12 md:mt-20">
-        <div class="px-2">
+        <div  class="px-2">
             <img src="./Img/Pic1.webp" class="" alt="Error 404" />
             <img src="./Img/Pic2.webp" class="" alt="Error 404" />
 
             <!-- ----------------------------------------------------- -->
-            <div onclick="redirectToFilter()" id="Home_imgs"
-                class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-8 gap-4 max-w-6xl mx-auto">
+            <div onclick="redirectToFilter()" id="Home_imgs" class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-8 gap-4 max-w-6xl mx-auto">
                 <div class="women-category text-center bg-white p rounded-lg shadow">
-                    <img src="./Img/Home-imgs/Kurta-sets.webp" alt="Kurta Sets"
-                        class="w-full h-auto object-cover rounded-md ">
-
+                    <img onclick="redirectToFilter()" src="./Img/Home-imgs/Kurta-sets.webp" alt="Kurta Sets"
+                        class="w-full h-auto object-cover rounded-md">
                 </div>
-                <div class="women-category text-center bg-white rounded-lg shadow">
+
+                <div onclick="redirectToFilter()" class="women-category text-center bg-white rounded-lg shadow">
                     <img src="./Img/Home-imgs/Dresses.webp" alt="Dresses" class="w-full h-auto object-cover rounded-md">
 
                 </div>
@@ -669,7 +662,11 @@
                         class="w-full h-auto object-cover rounded-md">
 
                 </div>
+                <div class=" text-center bg-white  rounded-lg shadow">
+                    <img src="./Img/Home-imgs/Jeans.webp" alt="Jeans"
+                        class="men-category w-full h-auto object-cover rounded-md">
 
+                </div>
                 <div class="women-category text-center bg-white rounded-lg shadow">
                     <img src="./Img/Home-imgs/Makeup.webp" alt="Makeup" class="w-full h-auto object-cover rounded-md">
 
@@ -685,15 +682,50 @@
 
                 </div>
 
+                <div class="men-category text-center bg-white p rounded-lg shadow">
+                    <img src="./Img/Home-imgs/Shirts.webp" alt="Kurta Sets"
+                        class="w-full h-auto object-cover rounded-md">
 
+                </div>
+                <div class="men-category text-center bg-white rounded-lg shadow">
+                    <img src="./Img/Home-imgs/T-shirts.webp" alt="Dresses"
+                        class="w-full h-auto object-cover rounded-md">
 
+                </div>
+                <div class="men-category text-center bg-white rounded-lg shadow">
+                    <img src="./Img/Home-imgs/Jeans.webp" alt="Tops & Shirts"
+                        class="w-full h-auto object-cover rounded-md">
+
+                </div>
+                <div class="men-category text-center bg-white  rounded-lg shadow">
+                    <img src="./Img/Home-imgs/Kurtas.webp" alt="Kurtas" class="w-full h-auto object-cover rounded-md">
+
+                </div>
+                <div class="men-category text-center bg-white  rounded-lg shadow">
+                    <img src="./Img/Home-imgs/Track-pent.webp" alt="Jeans"
+                        class="w-full h-auto object-cover rounded-md">
+
+                </div>
+                <div class="men-category text-center bg-white rounded-lg shadow">
+                    <img src="./Img/Home-imgs/CasualShoes.webp" alt="Makeup"
+                        class="w-full h-auto object-cover rounded-md">
+
+                </div>
                 <div class="women-category text-center bg-white rounded-lg shadow">
                     <img src="./Img/Home-imgs/Makeup.webp" alt="Flats & Heels"
                         class="w-full h-auto object-cover rounded-md">
 
                 </div>
+                <div class="men-category text-center bg-white  rounded-lg shadow">
+                    <img src="./Img/Home-imgs/Smart-watches.webp" alt="Home Decor"
+                        class="w-full h-auto object-cover rounded-md">
 
+                </div>
+                <div class="men-category hidden text-center bg-white  rounded-lg shadow">
+                    <img src="./Img/Home-imgs/reg-style.webp" alt="Home Decor"
+                        class="w-full h-auto object-cover rounded-md">
 
+                </div>
             </div>
             <img src="./Img/Pic3.webp" class="" alt="Error 404" />
         </div>
@@ -704,16 +736,30 @@
             <!-- Carousel wrapper -->
             <div onclick="redirectToFilter()" class="relative h-44 overflow-hidden rounded-lg md:h-96 mx-24">
                 <!-- Item 1 -->
-
+                <div class=" duration-700 ease-in-out flex justify-center items-center space-x-4" data-carousel-item>
+                    <img onclick="redirectToFilter('men')" src="./Img/Casual-shoes.webp" class="w-1/4 h-auto rounded-lg" alt="Casual Shoes">
+                    <img onclick="redirectToFilter('men')" src="./Img/Captivating.webp" class="w-1/4 h-auto rounded-lg" alt="Captivating">
+                    <img src="./Img/Titan-Casio.webp" class="w-1/4 h-auto rounded-lg" alt="Titan Casio">
+                    <img src="./Img/Arrow-shoes.webp" class="w-1/4 h-auto rounded-lg" alt="Arrow Shoes">
+                </div>
+                <div class="duration-700 ease-in-out flex justify-center items-center space-x-4"
+                    data-carousel-item>
+                    <img src="./Img/Oppo.webp" class="w-1/4 h-auto rounded-lg" alt="Casual Shoes">
+                    <img src="./Img/Titan-Casio.webp" class="w-1/4 h-auto rounded-lg" alt="Captivating">
+                    <img src="./Img/Titan-Casio.webp" class="w-1/4 h-auto rounded-lg" alt="Titan Casio">
+                    <img src="./Img/Vastramay.webp" class="w-1/4 h-auto rounded-lg" alt="Arrow Shoes">
+                </div>
                 <!-- Item 3 -->
-                <div class=" duration-1000 ease-in-out flex justify-center items-center space-x-4" data-carousel-item>
-                    <img src="./Img/H&M.webp" class="w-1/4 h-auto rounded-lg" alt="Casual Shoes">
+                <div class="duration-700 ease-in-out flex justify-center items-center space-x-4"
+                    data-carousel-item>
+                    <img  src="./Img/H&M.webp" class="w-1/4 h-auto rounded-lg" alt="Casual Shoes">
                     <img src="./Img/Mango-Trendoyal.webp" class="w-1/4 h-auto rounded-lg" alt="Captivating">
                     <img src="./Img/anamor.webp" class="w-1/4 h-auto rounded-lg" alt="Titan Casio">
                     <img src="./Img/Home-sizzler.webp" class="w-1/4 h-auto rounded-lg" alt="Arrow Shoes">
                 </div>
                 <!-- Item 4 (Grid View) -->
-                <div class=" duration-700 ease-in-out flex justify-center items-center space-x-4" data-carousel-item>
+                <div class=" duration-700 ease-in-out flex justify-center items-center space-x-4"
+                    data-carousel-item>
                     <img src="./Img/Jauger.webp" class="w-1/4 h-auto rounded-lg" alt="Casual Shoes">
                     <img src="./Img/here&now.webp" class="w-1/4 h-auto rounded-lg" alt="Captivating">
                     <img src="./Img/tavvi.webp" class="w-1/4 h-auto rounded-lg" alt="Titan Casio">
@@ -761,6 +807,7 @@
     </div>
 
     <!-- ---------------------------Shop by Catagory Page------------------------------- -->
+
     <div id="Shop-Catagory">
         <div class="flex flex-col justify-center items-center">
             <h1 class="text-lg sm:text-xl md:text-2xl lg:text-5xl font-bold my-6 text-red-600 uppercase text-[#3e4152] tracking-wider mt-12 mb-8 ml-7 md:max-h-[5em]">
@@ -780,6 +827,16 @@
                 </div>
             </div>
 
+            <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
+
+                <img onclick="redirectToFilter('men')" src="Img/Men-catagories/Trouser.webp" alt="Casual Wear" class="w-full h-44">
+
+                <div class="bottom-0 w-full bg-red-600 text-white text-center ">
+                    <p class="text-sm font-semibold">Casual Wear</p>
+                    <p class="text-lg font-extrabold">40-80% OFF</p>
+                    <p class="text-sm font-medium pb-1">Shop Now</p>
+                </div>
+            </div>
            
             <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
                 <img onclick="redirectToFilter('women')" src="Img/women-catagories/w-Jacket.webp" alt="Casual Wear" class="w-full h-44">
@@ -791,9 +848,29 @@
                    </div>
                </div>
                
-
+              
+            <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
+                <img onclick="redirectToFilter('men')" src="Img/Men-catagories/jackets.webp" alt="Casual Wear" class="w-full h-44">
+   
+                   <div class="bottom-0 w-full bg-red-600 text-white text-center ">
+                       <p class="text-sm font-semibold">Casual Wear</p>
+                       <p class="text-lg font-extrabold">40-80% OFF</p>
+                       <p class="text-sm font-medium pb-1">Shop Now</p>
+                   </div>
+               </div>
+           
                <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
                 <img onclick="redirectToFilter('women')" src="Img/women-catagories/w-Shoes.webp" alt="Casual Wear" class="w-full h-44">
+   
+                   <div class="bottom-0 w-full bg-red-600 text-white text-center ">
+                       <p class="text-sm font-semibold">Casual Wear</p>
+                       <p class="text-lg font-extrabold">40-80% OFF</p>
+                       <p class="text-sm font-medium pb-1">Shop Now</p>
+                   </div>
+               </div>
+       
+               <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
+                <img onclick="redirectToFilter('men')" src="Img/Men-catagories/kurt-set4.webp" alt="Casual Wear" class="w-full h-44">
    
                    <div class="bottom-0 w-full bg-red-600 text-white text-center ">
                        <p class="text-sm font-semibold">Casual Wear</p>
@@ -811,7 +888,16 @@
                        <p class="text-sm font-medium pb-1">Shop Now</p>
                    </div>
                </div>
-
+            
+               <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
+                <img onclick="redirectToFilter('men')" src="Img/Men-catagories/jeans2.webp" alt="Casual Wear" class="w-full h-44">
+   
+                   <div class="bottom-0 w-full bg-red-600 text-white text-center ">
+                       <p class="text-sm font-semibold">Casual Wear</p>
+                       <p class="text-lg font-extrabold">40-80% OFF</p>
+                       <p class="text-sm font-medium pb-1">Shop Now</p>
+                   </div>
+               </div>
 
                <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
                 <img onclick="redirectToFilter('women')" src="Img/women-catagories/w-Tshirt.webp" alt="Casual Wear" class="w-full h-44">
@@ -823,7 +909,16 @@
                    </div>
                </div>
            
-
+               <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
+                <img onclick="redirectToFilter('men')" src="Img/Men-catagories/kurta2.webp" alt="Casual Wear" class="w-full h-44">
+   
+                   <div class="bottom-0 w-full bg-red-600 text-white text-center ">
+                       <p class="text-sm font-semibold">Casual Wear</p>
+                       <p class="text-lg font-extrabold">40-80% OFF</p>
+                       <p class="text-sm font-medium pb-1">Shop Now</p>
+                   </div>
+               </div>
+           
                <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
                 <img onclick="redirectToFilter('women')" src="Img/women-catagories/sareas4.webp" alt="Casual Wear" class="w-full h-44">
    
@@ -854,6 +949,18 @@
                    </div>
                </div>
 
+            <!-- row 2 -->
+            
+            <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
+                <img onclick="redirectToFilter('men')" src="Img/Men-catagories/sweatshirt3.webp" alt="Casual Wear" class="w-full h-44">
+   
+                   <div class="bottom-0 w-full bg-red-600 text-white text-center ">
+                       <p class="text-sm font-semibold">Casual Wear</p>
+                       <p class="text-lg font-extrabold">40-80% OFF</p>
+                       <p class="text-sm font-medium pb-1">Shop Now</p>
+                   </div>
+               </div>
+           
                <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
                 <img onclick="redirectToFilter('women')" src="Img/women-catagories/w-Jacket4.webp" alt="Casual Wear" class="w-full h-44">
    
@@ -864,7 +971,16 @@
                    </div>
                </div>
            
-
+               <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
+                <img onclick="redirectToFilter('men')" src="Img/Men-catagories/jeans4.webp" alt="Casual Wear" class="w-full h-44">
+   
+                   <div class="bottom-0 w-full bg-red-600 text-white text-center ">
+                       <p class="text-sm font-semibold">Casual Wear</p>
+                       <p class="text-lg font-extrabold">40-80% OFF</p>
+                       <p class="text-sm font-medium pb-1">Shop Now</p>
+                   </div>
+               </div>
+            
                <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
                 <img onclick="redirectToFilter('women')" src="Img/women-catagories/sareas3.webp" alt="Casual Wear" class="w-full h-44">
    
@@ -874,7 +990,26 @@
                        <p class="text-sm font-medium pb-1">Shop Now</p>
                    </div>
                </div>
-
+           
+               <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
+                <img onclick="redirectToFilter('men')" src="Img/Men-catagories/casual3-shoes.webp" alt="Casual Wear" class="w-full h-44">
+   
+                   <div class="bottom-0 w-full bg-red-600 text-white text-center ">
+                       <p class="text-sm font-semibold">Casual Wear</p>
+                       <p class="text-lg font-extrabold">40-80% OFF</p>
+                       <p class="text-sm font-medium pb-1">Shop Now</p>
+                   </div>
+               </div>
+         
+               <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
+                <img onclick="redirectToFilter('men')" src="Img/Men-catagories/jackets3.webp" alt="Casual Wear" class="w-full h-44">
+   
+                   <div class="bottom-0 w-full bg-red-600 text-white text-center ">
+                       <p class="text-sm font-semibold">Casual Wear</p>
+                       <p class="text-lg font-extrabold">40-80% OFF</p>
+                       <p class="text-sm font-medium pb-1">Shop Now</p>
+                   </div>
+               </div>
             
                <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
                 <img onclick="redirectToFilter('women')" src="Img/women-catagories/w-Trouser.webp" alt="Casual Wear" class="w-full h-44">
@@ -886,8 +1021,28 @@
                    </div>
                </div>
 
+            <!-- row 3 -->
             
+            <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
+                <img onclick="redirectToFilter('men')" src="Img/Men-catagories/kurta.webp" alt="Casual Wear" class="w-full h-44">
+   
+                   <div class="bottom-0 w-full bg-red-600 text-white text-center ">
+                       <p class="text-sm font-semibold">Casual Wear</p>
+                       <p class="text-lg font-extrabold">40-80% OFF</p>
+                       <p class="text-sm font-medium pb-1">Shop Now</p>
+                   </div>
+               </div>
           
+               <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
+                <img onclick="redirectToFilter('men')" src="Img/Men-catagories/shirt_4.webp" alt="Casual Wear" class="w-full h-44">
+   
+                   <div class="bottom-0 w-full bg-red-600 text-white text-center ">
+                       <p class="text-sm font-semibold">Casual Wear</p>
+                       <p class="text-lg font-extrabold">40-80% OFF</p>
+                       <p class="text-sm font-medium pb-1">Shop Now</p>
+                   </div>
+               </div>
+           
                <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
                 <img onclick="redirectToFilter('women')" src="Img/women-catagories/sareas3.webp" alt="Casual Wear" class="w-full h-44">
    
@@ -898,7 +1053,18 @@
                    </div>
                </div>
            
-            
+               <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
+                <img onclick="redirectToFilter('men')" src="Img/Men-catagories/men_4.webp" alt="Casual Wear" class="w-full h-44">
+   
+                   <div class="bottom-0 w-full bg-red-600 text-white text-center ">
+                       <p class="text-sm font-semibold">Casual Wear</p>
+                       <p class="text-lg font-extrabold">40-80% OFF</p>
+                       <p class="text-sm font-medium pb-1">Shop Now</p>
+                   </div>
+               </div>
+   
+            <div></div>
+            <div></div>
             
             <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
                 <img onclick="redirectToFilter('women')" src="Img/women-catagories/sareas3.webp" alt="Casual Wear" class="w-full h-44">
@@ -910,145 +1076,144 @@
                    </div>
                </div>
                
-           
+            <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
+                <img onclick="redirectToFilter('men')" src="Img/Men-catagories/kurta2.webp" alt="Casual Wear" class="w-full h-44">
+   
+                   <div class="bottom-0 w-full bg-red-600 text-white text-center ">
+                       <p class="text-sm font-semibold">Casual Wear</p>
+                       <p class="text-lg font-extrabold">40-80% OFF</p>
+                       <p class="text-sm font-medium pb-1">Shop Now</p>
+                   </div>
+               </div>
+               <div></div>
+               <div></div>
         </div>
-        <div> <img  src="./Img/Shop-by-Catagory/More-offers.webp" class="my-4"
+        <div> <img onclick="redirectToFilter('women')" src="./Img/Shop-by-Catagory/More-offers.webp" class="my-4"
                 alt="Error 404" /></div>
     </div>
 
-        <!----------------------------------- Footer ------------------------------->
-        <footer class="bg-gray-100 py-8 px-4 sm:px-10">
-            <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-                <!-- Column 1: Online Shopping & Useful Links -->
-                <div>
-                    <h2 class="font-bold mb-2 uppercase text-[#3e4152] tracking-wider text-[1.8em]  max-h-[5em]">ONLINE
-                        SHOPPING</h2>
-                    <ul class="space-y-1 text-gray-600">
-                        <li>Men</li>
-                        <li>Women</li>
-                        <li>Kids</li>
-                        <li>Home & Living</li>
-                        <li>Beauty</li>
-                        <li>Gift Cards</li>
-                        <li>Myntra Insider</li>
-                    </ul>
-                    <h2 class="font-bold mt-4 mb-2">USEFUL LINKS</h2>
-                    <ul class="space-y-1 text-gray-600">
-                        <li>Blog</li>
-                        <li>Careers</li>
-                        <li>Site Map</li>
-                        <li>Corporate Information</li>
-                        <li>Whitehat</li>
-                        <li>Cleartrip</li>
-                    </ul>
-                </div>
+    <!----------------------------------- Footer ------------------------------->
+    <footer class="bg-gray-100 py-8 px-4 sm:px-10">
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Column 1: Online Shopping & Useful Links -->
+            <div>
+                <h2 class="font-bold mb-2 uppercase text-[#3e4152] tracking-wider text-[1.8em]  max-h-[5em]">ONLINE
+                    SHOPPING</h2>
+                <ul class="space-y-1 text-gray-600">
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Kids</li>
+                    <li>Home & Living</li>
+                    <li>Beauty</li>
+                    <li>Gift Cards</li>
+                    <li>Myntra Insider</li>
+                </ul>
+                <h2 class="font-bold mt-4 mb-2">USEFUL LINKS</h2>
+                <ul class="space-y-1 text-gray-600">
+                    <li>Blog</li>
+                    <li>Careers</li>
+                    <li>Site Map</li>
+                    <li>Corporate Information</li>
+                    <li>Whitehat</li>
+                    <li>Cleartrip</li>
+                </ul>
+            </div>
 
-                <!-- Column 2: Customer Policies -->
-                <div>
-                    <h2 class="font-bold mb-2">CUSTOMER POLICIES</h2>
-                    <ul class="space-y-1 text-gray-600">
-                        <li>Contact Us</li>
-                        <li>FAQ</li>
-                        <li>T&C</li>
-                        <li>Terms of Use</li>
-                        <li>Track Orders</li>
-                        <li>Shipping</li>
-                        <li>Cancellation</li>
-                        <li>Returns</li>
-                        <li>Privacy Policy</li>
-                        <li>Grievance Redressal</li>
-                    </ul>
-                </div>
+            <!-- Column 2: Customer Policies -->
+            <div>
+                <h2 class="font-bold mb-2">CUSTOMER POLICIES</h2>
+                <ul class="space-y-1 text-gray-600">
+                    <li>Contact Us</li>
+                    <li>FAQ</li>
+                    <li>T&C</li>
+                    <li>Terms of Use</li>
+                    <li>Track Orders</li>
+                    <li>Shipping</li>
+                    <li>Cancellation</li>
+                    <li>Returns</li>
+                    <li>Privacy Policy</li>
+                    <li>Grievance Redressal</li>
+                </ul>
+            </div>
 
-                <!-- Column 3: App Experience & Social Media -->
-                <div>
-                    <h2 class="font-bold mb-2">EXPERIENCE MYNTRA APP ON MOBILE</h2>
-                    <div class="flex space-x-2">
-                        <img src="./Img/Shop-by-Catagory/Google-play.png" class="w-32" alt="Google Play">
-                        <img src="./Img/Shop-by-Catagory/Play-store.png" class="w-32" alt="App Store">
-                    </div>
-                    <h2 class="font-bold mt-4 mb-2">KEEP IN TOUCH</h2>
-                    <div class="flex space-x-4">
-                        <i class="fa-brands fa-facebook w-6 text-2xl"></i>
-                        <i class="fa-brands fa-twitter w-6 text-2xl"></i>
-                        <i class="fa-brands fa-youtube w-6 text-2xl"></i>
-                        <i class="fa-brands fa-instagram w-6 text-2xl"></i>
-                    </div>
+            <!-- Column 3: App Experience & Social Media -->
+            <div>
+                <h2 class="font-bold mb-2">EXPERIENCE MYNTRA APP ON MOBILE</h2>
+                <div class="flex space-x-2">
+                    <img src="./Img/Shop-by-Catagory/Google-play.png" class="w-32" alt="Google Play">
+                    <img src="./Img/Shop-by-Catagory/Play-store.png" class="w-32" alt="App Store">
                 </div>
-
-                <!-- Column 4: Guarantee & Returns -->
-                <div class="text-gray-700">
-                    <div class="flex items-center space-x-2">
-                        <i class="fa-solid fa-people-robbery w-8 text-3xl"></i>
-                        <p><span class="font-bold">100% ORIGINAL</span> guarantee for all products at myntra.com</p>
-                    </div>
-                    <div class="flex items-center space-x-2 mt-4">
-                        <i class="fa-solid fa-retweet text-3xl"></i>
-                        <p><span class="font-bold">Return within 14 days</span> of receiving your order</p>
-                    </div>
+                <h2 class="font-bold mt-4 mb-2">KEEP IN TOUCH</h2>
+                <div class="flex space-x-4">
+                    <i class="fa-brands fa-facebook w-6 text-2xl"></i>
+                    <i class="fa-brands fa-twitter w-6 text-2xl"></i>
+                    <i class="fa-brands fa-youtube w-6 text-2xl"></i>
+                    <i class="fa-brands fa-instagram w-6 text-2xl"></i>
                 </div>
             </div>
 
-            <!-- Footer Bottom Section -->
-            <div class="container mx-auto text-center md:text-left mt-8">
-                <div class="mb-8 border-b pb-4 text-gray-600">
-                    <div class="flex items-center my-4">
-                        <span class="font-bold text-gray-600">Popular Searches</span>
-                        <div class="w-auto h-[1px] mx-2 bg-gray-300 flex-1"></div>
-                    </div>
+            <!-- Column 4: Guarantee & Returns -->
+            <div class="text-gray-700">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-people-robbery w-8 text-3xl"></i>
+                    <p><span class="font-bold">100% ORIGINAL</span> guarantee for all products at myntra.com</p>
+                </div>
+                <div class="flex items-center space-x-2 mt-4">
+                    <i class="fa-solid fa-retweet text-3xl"></i>
+                    <p><span class="font-bold">Return within 14 days</span> of receiving your order</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Section -->
+        <div class="container mx-auto text-center md:text-left mt-8">
+            <div class="mb-8 border-b pb-4 text-gray-600">
+                <div class="flex items-center my-4">
+                    <span class="font-bold text-gray-600">Popular Searches</span>
+                    <div class="w-auto h-[1px] mx-2 bg-gray-300 flex-1"></div>
+                </div>
+                <p class="text-sm text-gray-600">
+                    Makeup | Dresses For Girls | T-Shirts | Sandals | Headphones | Babydolls | Blazers For Men |
+                    Handbags | Ladies Watches | Bags | Sport Shoes | Reebok Shoes | Puma Shoes | Boxers | Wallets | Tops
+                    |
+                    Earrings | Fastrack Watches | Kurtis | Nike | Smart Watches | Titan Watches | Designer Blouse |
+                    Gowns | Rings | Cricket Shoes | Forever 21 | Eye Makeup | Photo Frames | Punjabi Suits | Bikini |
+                    Myntra Fashion Show | Lipstick | Saree | Watches | Dresses | Lehenga | Nike Shoes | Goggles | Bras |
+                    Suit | Chinos | Shoes | Adidas Shoes | Woodland Shoes | Jewellery | Designers Sarees
+                </p>
+            </div>
+            <div class="flex flex-col sm:flex-row justify-between">
+                <div class="text-sm text-gray-600 mb-4 sm:mb-0">
+                    In case of any concern, <a href="#" class="text-blue-600 font-semibold">Contact Us</a>
+                </div>
+                <div class="text-sm text-gray-500">&copy; 2025 www.Mailocollection.com. All rights reserved.</div>
+                <div class="text-sm text-gray-500">A Flipkart company</div>
+            </div>
+            <div class="mt-6 flex flex-col sm:flex-row justify-between">
+                <div>
+                    <h3 class="font-bold text-sm">Registered Office Address</h3>
                     <p class="text-sm text-gray-600">
-                        Makeup | Dresses For Girls | T-Shirts | Sandals | Headphones | Babydolls | Blazers For Men |
-                        Handbags | Ladies Watches | Bags | Sport Shoes | Reebok Shoes | Puma Shoes | Boxers | Wallets |
-                        Tops
-                        |
-                        Earrings | Fastrack Watches | Kurtis | Nike | Smart Watches | Titan Watches | Designer Blouse |
-                        Gowns | Rings | Cricket Shoes | Forever 21 | Eye Makeup | Photo Frames | Punjabi Suits | Bikini
-                        |
-                        Myntra Fashion Show | Lipstick | Saree | Watches | Dresses | Lehenga | Nike Shoes | Goggles |
-                        Bras |
-                        Suit | Chinos | Shoes | Adidas Shoes | Woodland Shoes | Jewellery | Designers Sarees
+                        Buildings Alyssa, <br />
+                        Begonia and Clover situated in Embassy Tech Village, <br />
+                        Outer Ring Road, <br />
+                        Devarabeesanahalli Village, <br />
+                        Varthur Hobli, <br />
+                        Islamabad - 560103, Pakistan
                     </p>
                 </div>
-                <div class="flex flex-col sm:flex-row justify-between">
-                    <div class="text-sm text-gray-600 mb-4 sm:mb-0">
-                        In case of any concern, <a href="#" class="text-blue-600 font-semibold">Contact Us</a>
-                    </div>
-                    <div class="text-sm text-gray-500">&copy; 2025 www.Mailocollection.com. All rights reserved.</div>
-                    <div class="text-sm text-gray-500">A Flipkart company</div>
-                </div>
-                <div class="mt-6 flex flex-col sm:flex-row justify-between">
-                    <div>
-                        <h3 class="font-bold text-sm">Registered Office Address</h3>
-                        <p class="text-sm text-gray-600">
-                            Buildings Alyssa, <br />
-                            Begonia and Clover situated in Embassy Tech Village, <br />
-                            Outer Ring Road, <br />
-                            Devarabeesanahalli Village, <br />
-                            Varthur Hobli, <br />
-                            Islamabad - 560103, Pakistan
-                        </p>
-                    </div>
-                    <div class="flex flex-col justify-end mt-4 sm:mt-0">
-                        <p class="text-sm text-gray-600">CIN: U72300KA2007PTC041799</p>
-                        <p class="text-sm text-gray-600">
-                            Telephone: <a href="tel:+918061561999"
-                                class="text-blue-600 font-semibold">+92-316-8323253</a>
-                        </p>
-                    </div>
+                <div class="flex flex-col justify-end mt-4 sm:mt-0">
+                    <p class="text-sm text-gray-600">CIN: U72300KA2007PTC041799</p>
+                    <p class="text-sm text-gray-600">
+                        Telephone: <a href="tel:+918061561999" class="text-blue-600 font-semibold">+92-316-8323253</a>
+                    </p>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
 
-
-        <!-- <script src="Script.js"></script> -->
-        <script>
-            function redirectToFilter() {
-                localStorage.setItem("filterCategory", "women"); // Store "women" category in localStorage
-                window.location.href = "filter.html"; // Redirect to filter page
-            }
-
-        </script>
+    <!-- JavaScript link -->
+    <script src="Script.js"></script>
 </body>
 
 </html>
