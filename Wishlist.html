@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-white shadow p-4 flex justify-between items-center">
+        <h1 class="text-xl font-bold">Wishlist</h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li>
+                    <a href="index.html" class="text-blue-500">🏠 Back to Shop</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Wishlist Section -->
+    <div class="container mx-auto p-4 flex gap-6">
+        <!-- Wishlist Items -->
+        <div class="w-3/4 grid grid-cols-3 gap-4" id="wishlist-container">
+            <!-- Wishlist items will be dynamically added here -->
+        </div>
+
+        <!-- Price Summary Section -->
+        <div class="w-1/4 bg-white p-4 rounded-lg shadow-md h-fit">
+            <h2 class="text-lg font-semibold mb-2">Wishlist Total</h2>
+            <p class="text-red-500 text-2xl font-bold">Total: $<span id="total-price">0</span></p>
+        </div>
+    </div>
+
+    <script>
+        function displayWishlist() {
+            const wishlistContainer = document.getElementById("wishlist-container");
+            const totalPriceElement = document.getElementById("total-price");
+            wishlistContainer.innerHTML = "";
+
+            let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+            let totalPrice = 0;
+
+            if (wishlist.length === 0) {
+                wishlistContainer.innerHTML = "<p class='text-center text-gray-500 col-span-3'>Your Wishlist is Empty</p>";
+                totalPriceElement.innerText = "0"; // Reset total price
+                return;
+            }
+
+            wishlist.forEach(product => {
+                // Convert discountPrice to a number (remove "$" and parse as float)
+                const price = parseFloat(product.discountPrice.replace("$", ""));
+                totalPrice += price; // Add to total price
+
+                const productCard = document.createElement("div");
+                productCard.className = "bg-white p-4 rounded-lg shadow-md text-center";
+                productCard.innerHTML = `
+                    <img src="${product.image}" alt="${product.name}" class="w-full h-auto object-cover rounded-lg">
+                    <h3 class="text-lg font-semibold">${product.name}</h3>
+                    <p class="text-red-500 text-xl font-bold">$${product.discountPrice} 
+                        <span class="text-gray-400 line-through text-sm">$${product.price}</span>
+                    </p>
+                    <button class="bg-gray-500 text-white px-4 py-2 rounded-md mt-2 hover:bg-gray-700 remove-btn" data-id="${product.id}">
+                        Remove ❌
+                    </button>
+                `;
+                wishlistContainer.appendChild(productCard);
+            });
+
+            totalPriceElement.innerText = totalPrice.toFixed(2); // Update total price display
+
+            // Attach event listeners to remove buttons
+            document.querySelectorAll(".remove-btn").forEach(button => {
+                button.addEventListener("click", function () {
+                    removeFromWishlist(this.getAttribute("data-id"));
+                });
+            });
+        }
+
+        function removeFromWishlist(id) {
+            let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+            wishlist = wishlist.filter(product => product.id != id); // Remove product
+            localStorage.setItem("wishlist", JSON.stringify(wishlist));
+            displayWishlist(); // Refresh the list and update total price
+        }
+
+        // Load Wishlist on Page Load
+        displayWishlist();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innerwear Ad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+
+</head>
+
+<body class="bg-white">
+    <nav id="header"
+        class="fixed top-0 left-0 w-full z-50 bg-white border-gray-200 shadow-sm shadow-gray-200/50 dark:bg-gray-900">
+        <div class=" max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
+            <a href="Index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img class="ml-8 w-16 h-16" src="Img/Logo.jpeg" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
+            </a>
+            <div class="flex md:order-2">
+                <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search"
+                    aria-expanded="false"
+                    class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1">
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 20 20">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                    </svg>
+                    <span class="sr-only">Search</span>
+                </button>
+                <div class="relative hidden md:block">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                        <span class="sr-only">Search icon</span>
+                    </div>
+                    <!-- input -->
+                    <input type="text" id="search-navbar"
+                        class="block w-[350px] p-[10px] ps-10 text-sm text-gray-900 bg-gray-100 border rounded-sm focus:ring-none focus:border-black focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search for products, brands and more">
+                </div>
+                <button data-collapse-toggle="navbar-search" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-search" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+                <div class="relative mt-0 md:hidden">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                        </svg>
+                    </div>
+                    <input type="text" id="search-navbar"
+                        class="block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                        placeholder="Search...">
+                </div>
+                <ul
+                    class="flex flex-col p-12 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-4 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <!-------------------Ancher of Men------------------------>
+                    <li class="relative group">
+                        <a href="men.html" id="men"
+                            class="block relative px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent  md:py-7 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 group">
+                            Men
+                            <span class="absolute bottom-0 left-0 w-0 h-[3px] bg-orange-600  group-hover:w-full"></span>
+                        </a>
+                        <!-- Dropdown Menu for Men-->
+                        <div id="men"
+                            class="absolute left-0 hidden group-hover:grid grid-cols-5 gap-6 bg-white shadow-lg min-w-[1000px] p-6 border border-gray-200 mt-0">
+                            <!-- Topwear -->
+                            <div>
+                                <h3 class="grid text-orange-600">Topwear</h3>
+                                <ul class="space-y-1 text-sm ">
+                                    <li>T-Shirts</li>
+                                    <li>Casual Shirts</li>
+                                    <li>Formal Shirts</li>
+                                    <li>Sweatshirts</li>
+                                    <li>Sweaters</li>
+                                    <li>Jackets</li>
+                                    <li>Blazers & Coats</li>
+                                    <li>Suits</li>
+                                    <li>Rain Jackets</li>
+                                </ul>
+                                <h3 class="mt-4 font-bold text-orange-600">Indian & Festive Wear</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li>Kurtas & Kurta Sets</li>
+                                    <li>Sherwanis</li>
+                                    <li>Nehru Jackets</li>
+                                    <li>Dhotis</li>
+                                </ul>
+                            </div>
+
+                            <!-- Bottomwear -->
+                            <div class=" px-4 bg-gray-100">
+                                <h3 class="font-bold text-orange-600">Bottomwear</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li>Jeans</li>
+                                    <li>Casual Trousers</li>
+                                    <li>Formal Trousers</li>
+                                    <li>Shorts</li>
+                                    <li>Track Pants & Joggers</li>
+                                </ul>
+                                <h3 class="mt-4 font-bold text-orange-600">Innerwear & Sleepwear</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li>Briefs & Trunks</li>
+                                    <li>Boxers</li>
+                                    <li>Vests</li>
+                                    <li>Sleepwear & Loungewear</li>
+                                    <li>Thermals</li>
+                                </ul>
+                                <h3 class="mt-4 font-bold text-orange-600">Plus Size</h3>
+                            </div>
+
+                            <!-- Footwear -->
+                            <div>
+                                <h3 class="grid font-bold text-orange-600">Footwear</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li>Casual Shoes</li>
+                                    <li>Sports Shoes</li>
+                                    <li>Formal Shoes</li>
+                                    <li>Sneakers</li>
+                                    <li>Sandals & Floaters</li>
+                                    <li>Flip Flops</li>
+                                    <li>Socks</li>
+                                </ul>
+                                <h3 class="mt-4 font-bold text-orange-600">Personal Care & Grooming</h3>
+                                <h3 class="mt-4 font-bold text-orange-600">Sunglasses & Frames</h3>
+                                <h3 class="mt-4 font-bold text-orange-600">Watches</h3>
+                            </div>
+
+                            <!-- Sports & Active Wear -->
+                            <div class=" px-4 bg-gray-100">
+                                <h3 class="font-bold text-orange-600">Sports & Active Wear</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li>Sports Shoes</li>
+                                    <li>Sports Sandals</li>
+                                    <li>Active T-Shirts</li>
+                                    <li>Track Pants & Shorts</li>
+                                    <li>Tracksuits</li>
+                                    <li>Jackets & Sweatshirts</li>
+                                    <li>Sports Accessories</li>
+                                    <li>Swimwear</li>
+                                </ul>
+                                <h3 class="mt-4 font-bold text-orange-600">Gadgets</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li>Smart Wearables</li>
+                                    <li>Fitness Gadgets</li>
+                                    <li>Headphones</li>
+                                    <li>Speakers</li>
+                                </ul>
+                            </div>
+
+                            <!-- Fashion Accessories -->
+                            <div>
+                                <h3 class="font-bold text-orange-600">Fashion Accessories</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li>Wallets</li>
+                                    <li>Belts</li>
+                                    <li>Perfumes & Body Mists</li>
+                                    <li>Trimmers</li>
+                                    <li>Deodorants</li>
+                                    <li>Ties, Cufflinks & Pocket Squares</li>
+                                    <li>Accessory Gift Sets</li>
+                                    <li>Caps & Hats</li>
+                                    <li>Mufflers, Scarves & Gloves</li>
+                                    <li>Phone Cases</li>
+                                    <li>Rings & Wristwear</li>
+                                    <li>Helmets</li>
+                                </ul>
+                                <h3 class="mt-4 font-bold text-orange-600">Bags & Backpacks</h3>
+                                <h3 class="mt-4 font-bold text-orange-600">Luggages & Trolleys</h3>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="relative group">
+                        <a href="Women.html" id="women"
+                            class="block relative px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent  md:py-7 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                            Women
+                            <span class="absolute bottom-0 left-0 w-0 h-[3px] bg-pink-600  group-hover:w-full"></span>
+                        </a>
+                        <!------------------------------------------ Dropdown Menu for Women -------------------->
+                        <div id="women"
+                            class="absolute left-[-73px] hidden group-hover:grid grid-cols-5 gap-6 bg-white shadow-lg min-w-[1000px] p-6 border border-gray-200 mt-0">
+                            <!-- Pakistan & Fusion Wear -->
+                            <div>
+                                <h3 class="font-bold text-pink-600">Pakistan & Fusion Wear</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li>Kurtas & Suits</li>
+                                    <li>Kurtis, Tunics & Tops</li>
+                                    <li>Sarees</li>
+                                    <li>Ethnic Wear</li>
+                                    <li>Leggings, Salwars & Churidars</li>
+                                    <li>Skirts & Palazzos</li>
+                                    <li>Dress Materials</li>
+                                    <li>Lehenga Cholis</li>
+                                    <li>Dupattas & Shawls</li>
+                                    <li>Jackets</li>
+                                </ul>
+                            </div>
+
+                            <!-- Western Wear -->
+                            <div class="px-4 bg-gray-100">
+                                <h3 class="font-bold text-pink-600">Western Wear</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li>Dresses</li>
+                                    <li>Tops</li>
+                                    <li>T-Shirts</li>
+                                    <li>Jeans</li>
+                                    <li>Trousers & Capris</li>
+                                    <li>Shorts & Skirts</li>
+                                    <li>Co-ords</li>
+                                    <li>Playsuits</li>
+                                    <li>Jumpsuits</li>
+                                    <li>Shrugs</li>
+                                    <li>Sweaters & Sweatshirts</li>
+                                    <li>Jackets & Coats</li>
+                                    <li>Blazers & Waistcoats</li>
+                                </ul>
+                            </div>
+
+                            <!-- Footwear -->
+                            <div>
+                                <h3 class="font-bold text-pink-600">Footwear</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li>Flats</li>
+                                    <li>Casual Shoes</li>
+                                    <li>Heels</li>
+                                    <li>Boots</li>
+                                    <li>Sports Shoes & Floaters</li>
+                                </ul>
+                            </div>
+
+                            <!-- Lingerie & Sleepwear -->
+                            <div class="bg-gray-100 px-2">
+                                <h3 class="font-bold text-pink-600">Lingerie & Sleepwear</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li>Bra</li>
+                                    <li>Briefs</li>
+                                    <li>Shapewear</li>
+                                    <li>Sleepwear & Loungewear</li>
+                                    <li>Swimwear</li>
+                                    <li>Camisoles & Thermals</li>
+                                </ul>
+                            </div>
+
+                            <!-- Accessories & Beauty -->
+                            <div>
+                                <h3 class="font-bold text-pink-600">Accessories & Beauty</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li>Makeup</li>
+                                    <li>Skincare</li>
+                                    <li>Premium Beauty</li>
+                                    <li>Lipsticks</li>
+                                    <li>Fragrances</li>
+                                    <li>Jewellery</li>
+                                    <li>Smart Wearables</li>
+                                    <li>Fitness Gadgets</li>
+                                    <li>Handbags</li>
+                                    <li>Luggages & Trolleys</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="relative group">
+                        <a href="Kids.html" id="kids"
+                            class="block relative px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent  md:py-7 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                            Kids
+                            <span class="absolute bottom-0 left-0 w-0 h-[3px] bg-orange-400  group-hover:w-full"></span>
+                        </a>
+
+                        <!------------------------------------------ Dropdown Menu for Kids -------------------->
+                        <div
+                            class="absolute left-[-170px] hidden group-hover:grid grid-cols-5 gap-6 bg-white shadow-lg min-w-[1000px] p-6 border border-gray-200 mt-0">
+                            <!-- Boys Clothings -->
+                            <div>
+                                <h3 class="font-bold text-orange-400">Boys Clothing</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li>T-Shirts</li>
+                                    <li>Shirts</li>
+                                    <li>Shorts</li>
+                                    <li>Jeans</li>
+                                    <li>Trousers</li>
+                                    <li>Clothing Sets</li>
+                                    <li>Ethnic Wear</li>
+                                    <li>Track Pants & Pyjamas</li>
+                                    <li>Party Wear</li>
+                                    <li>Innerwear & Thermals</li>
+                                    <li>Nightwear & Loungewear</li>
+                                    <li>Value Packs</li>
+                                </ul>
+                            </div>
+
+
+                            <!-- Girls Clothing -->
+                            <div class=" px-4 bg-gray-100">
+                                <h3 class="font-bold text-orange-400">Girls Clothing</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li>Dresses</li>
+                                    <li>Tops</li>
+                                    <li>Tshirts</li>
+                                    <li>Clothing Sets</li>
+                                    <li>Lehenga choli</li>
+                                    <li>Kurta Sets</li>
+                                    <li>Party wear</li>
+                                    <li>Dungarees & Jumpsuits</li>
+                                    <li>Skirts & shorts</li>
+                                    <li>Tights & Leggings</li>
+                                    <li>Jeans, Trousers & Capris</li>
+                                    <li>Jacket, Sweater & Sweatshirts</li>
+                                    <li>Innerwear & Thermals</li>
+                                    <li>Nightwear & Loungewear</li>
+                                    <li>Value Packs</li>
+
+                                </ul>
+                            </div>
+
+                            <!-- Footwear -->
+                            <div>
+                                <h3 class="font-bold text-orange-400">Foot wear</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li>Casual Shoes</li>
+                                    <li>Flipflops</li>
+                                    <li>Sports Shoes</li>
+                                    <li>Flats</li>
+                                    <li>Sandals</li>
+                                    <li>Heels</li>
+                                    <li>School Shoes</li>
+                                    <li>Socks</li>
+
+                                </ul>
+                                <h3 class="mt-4 font-bold text-orange-400">Toys and Games</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li>Kurtas & Kurta Sets</li>
+                                    <li>Sherwanis</li>
+                                    <li>Nehru Jackets</li>
+                                    <li>Dhotis</li>
+                                    <li>Learning & Development</li>
+                                    <li>Activity Toys</li>
+                                    <li>Soft Toys</li>
+                                    <li>Action Figure / Play Set</li>
+
+                                </ul>
+                            </div>
+                            <!-- Infants-->
+                            <div class=" px-4 bg-gray-100">
+                                <h3 class="font-bold text-orange-400">Infants</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li>Casual Shoes</li>
+                                    <li>Sports Shoes</li>
+                                    <li>Formal Shoes</li>
+                                    <li>Sneakers</li>
+                                    <li>Sandals & Floaters</li>
+                                    <li>Flip Flops</li>
+                                    <li>Socks</li>
+                                    <li>Bodysuits</li>
+                                    <li>Rompers & Sleepsuits</li>
+                                    <li>Clothing Sets</li>
+                                    <li>Tshirts & Tops</li>
+                                    <li>Dresses</li>
+                                    <li>Bottom Wear</li>
+                                    <li>Winter Wear</li>
+                                    <li>Innerwear & Sleepwear</li>
+                                    <li>Infant Care</li>
+
+                                </ul>
+                                <h3 class="mt-1 font-bold text-orange-400">Home & Bath</h3>
+                                <h3 class="mt-1 font-bold text-orange-400">Personal Care</h3>
+
+                            </div>
+                            <!--kids  Accessories -->
+                            <div>
+                                <h3 class="font-bold text-orange-400">Kids Accessories</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#">Kids Accessories</a></li>
+                                    <li><a href="#">Bags & Backpacks</a></li>
+                                    <li><a href="#">Watches</a></li>
+                                    <li><a href="#">Jewellery & Hair Accessory</a></li>
+                                    <li><a href="#">Sunglasses</a></li>
+                                    <li><a href="#">Masks & Protective Gears</a></li>
+                                    <li><a href="#">Caps & Hats</a></li>
+
+                                </ul>
+                                <!------------ Brands ----------->
+                                <h3 class="font-bold text-orange-400 mt-4">Brands</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#">H&M</a></li>
+                                    <li><a href="#">Max Kids</a></li>
+                                    <li><a href="#">Pantaloons</a></li>
+                                    <li><a href="#">United Colors Of Benetton Kids</a></li>
+                                    <li><a href="#">YK</a></li>
+                                    <li><a href="#">U.S. Polo Assn. Kids</a></li>
+                                    <li><a href="#">Mothercare</a></li>
+                                    <li><a href="#">HRX</a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </li>
+                    <!-- home and Living -->
+                    <li class="relative group">
+                        <a href="Home.html" id="men"
+                            class="block relative px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent  md:py-7 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                            Home & Living
+                            <span class="absolute bottom-0 left-0 w-0 h-[3px] bg-yellow-400  group-hover:w-full"></span>
+                        </a>
+
+                        <!-- Dropdown Menu for Home and Living-->
+                        <div
+                            class="absolute left-[-240px] hidden group-hover:grid grid-cols-5 gap-6 bg-white shadow-lg min-w-[1000px] p-6 border border-gray-200 mt-0">
+                            <!-- Topwear -->
+                            <div>
+                                <h3 class="font-bold text-yellow-400">Bed Linen & Furnishing</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#">Bed Runners</a></li>
+                                    <li><a href="#">Mattress Protectors</a></li>
+                                    <li><a href="#">Bedsheets</a></li>
+                                    <li><a href="#">Bedding Sets</a></li>
+                                    <li><a href="#">Blankets, Quilts & Dohars</a></li>
+                                    <li><a href="#">Pillows & Pillow Covers</a></li>
+                                    <li><a href="#">Bed Covers</a></li>
+                                    <li><a href="#">Diwan Sets</a></li>
+                                    <li><a href="#">Chair Pads & Covers</a></li>
+                                    <li><a href="#">Sofa Covers</a></li>
+
+                                </ul>
+                                <h3 class="mt-4 font-bold text-yellow-400">Flooring</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#">Floor Runners</a></li>
+                                    <li><a href="#">Carpets</a></li>
+                                    <li><a href="#">Floor Mats & Dhurries</a></li>
+                                    <li><a href="#">Door Mats</a></li>
+
+                                </ul>
+                            </div>
+
+                            <!-- Bath -->
+                            <div class=" px-4 bg-gray-100">
+                                <h3 class="font-bold text-yellow-400">Bath</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#">Bath Towels</a></li>
+                                    <li><a href="#">Hand & Face Towels</a></li>
+                                    <li><a href="#">Beach Towels</a></li>
+                                    <li><a href="#">Towels Set</a></li>
+                                    <li><a href="#">Bath Rugs</a></li>
+                                    <li><a href="#">Bath Robes</a></li>
+                                    <li><a href="#">Bathroom Accessories</a></li>
+                                    <li><a href="#">Shower Curtains</a></li>
+
+                                </ul>
+                                <h3 class="mt-4 font-bold text-yellow-400">Lamps & Lighting</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#">Floor Lamps</a></li>
+                                    <li><a href="#">Ceiling Lamps</a></li>
+                                    <li><a href="#">Table Lamps</a></li>
+                                    <li><a href="#">Wall Lamps</a></li>
+                                    <li><a href="#">Outdoor Lamps</a></li>
+                                    <li><a href="#">String Lights</a></li>
+
+                                </ul>
+
+                            </div>
+
+                            <!-- Home Décor -->
+                            <div>
+                                <h3 class="font-bold text-yellow-400">Home Décor</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#">Plants & Planters</a></li>
+                                    <li><a href="#">Aromas & Candles</a></li>
+                                    <li><a href="#">Clocks</a></li>
+                                    <li><a href="#">Mirrors</a></li>
+                                    <li><a href="#">Wall Décor</a></li>
+                                    <li><a href="#">Festive Decor</a></li>
+                                    <li><a href="#">Pooja Essentials</a></li>
+                                    <li><a href="#">Wall Shelves</a></li>
+                                    <li><a href="#">Fountains</a></li>
+                                    <li><a href="#">Showpieces & Vases</a></li>
+                                    <li><a href="#">Ottoman</a></li>
+
+                                </ul>
+                                <h3 class="mt-4 font-bold text-yellow-400">Cushions & Cushion Covers</h3>
+                                <h3 class="mt-4 font-bold text-yellow-400"> Curtains</h3>
+
+                            </div>
+
+                            <!-- Furiture -->
+                            <div class=" px-4 bg-gray-100">
+                                <h3 class="font-bold text-yellow-400">Furniture
+                                </h3>
+                                <h3 class="mt-4 font-bold text-yellow-400">Home Gift Sets</h3>
+                                <h3 class="font-bold text-yellow-400 mt-4">Kitchen & Table</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#">Table Runners</a></li>
+                                    <li><a href="#">Dinnerware & Serveware</a></li>
+                                    <li><a href="#">Cups and Mugs</a></li>
+                                    <li><a href="#">Bakeware & Cookware</a></li>
+                                    <li><a href="#">Kitchen Storage & Tools</a></li>
+                                    <li><a href="#">Bar & Drinkware</a></li>
+                                    <li><a href="#">Table Covers & Furnishings</a></li>
+
+                                </ul>
+
+
+                            </div>
+
+                            <!-- Storage -->
+                            <div>
+                                <h3 class="font-bold text-yellow-400">Storage</h3>
+                                <ul class="space-y-1 text-sm">
+                                    <li><a href="#">Bins</a></li>
+                                    <li><a href="#">Hangers</a></li>
+                                    <li><a href="#">Organisers</a></li>
+                                    <li><a href="#">Hooks & Holders</a></li>
+                                    <li><a href="#">Laundry Bags</a></li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="relative group">
+                        <a href="#" id="Kids"
+                            class="block relative px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent  md:py-7 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
+                            Studio
+                            <span class="absolute bottom-0 left-0 w-0 h-[3px] bg-red-500  group-hover:w-full"></span>
+                        </a>
+                        <!------------------------------------------ Dropdown Menu for studio -------------------->
+                        <div
+                            class="absolute left-[-150px] hidden group-hover:block gap-6 bg-white shadow-lg min-w-[500px] p-6 border border-gray-200 mt-0 flex-col justify-center items-center text-center">
+                            <div class="flex justify-center items-center mb-2"> <img src="./Img/studio-logo-new.svg"
+                                    alt="not found"></div>
+                            <h5 class="text-[#535665]">Your daily inspiration for everything fashion</h5>
+                            <div class="mt-4">
+
+                                <img src='./Img/sudio-nav-banner.png'>
+                            </div>
+                            <button class="border-2 mt-4 p-2">Explore Studio </button>
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+
+
+            <div class="items-center justify-center hidden w-full md:flex md:w-auto md:order-3" id="navbar-search">
+                <ul
+                    class="flex flex-row items-center space-x-6 p-0 md:py-0 mt-0 font-medium border border-gray-100 rounded-lg bg-gray-50 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <!-- login and sign up page -->
+                    <li class="relative group ">
+                        <a href="#" class="flex flex-col items-center  h-auto py-0 gap-0 text-gray-900 rounded-sm 
+                                       hover:bg-gray-100 md:hover:bg-transparent  md:py-4 
+                                       md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 
+                                       dark:hover:text-white md:dark:hover:bg-transparent">
+                            <i class="fa-regular fa-user text-lg"></i>
+                            <span class="text-sm">Profile</span>
+                            <span class="absolute bottom-0 left-0 w-0 h-[3px] bg-red-500  group-hover:w-full"></span>
+                        </a>
+                        <div
+                            class="absolute left-[-100px] hidden group-hover:block gap-6 bg-white shadow-lg min-w-[300px] p-6 border border-gray-200 mt-0 flex-col ">
+                            <h1 class="font-bold text-xl">Well Come</h1>
+                            <p class="text-[#535665]">To access account and manage orders</p>
+                            <div class="mt-2">
+                                <button onclick="window.location.href='Signin.html'" class=" py-1 px-4 text-red-600 rounded-sm 
+                                hover:bg-gray-100 md:hover:bg-transparent md:hover:text-red-600 md:py-1 border rounded-sm hover:ring-none hover:border-red-600 focus:outline-none 
+                                md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 
+                                dark:hover:text-white md:dark:hover:bg-transparent">Log In / Sign UP </button>
+                            </div>
+                            <div class="w-full h-[1px] my-2 bg-gray-200"></div>
+                            <div>
+
+                                <ul class="space-y-1 text-sm">
+
+                                    <li><a href="#">Orders</a></li>
+                                    <li><a href="#">Wishlist</a></li>
+                                    <li><a href="#">Gift Cards</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Myntra Insider</a></li>
+
+                                </ul>
+
+                            </div>
+                            <div class="w-full h-[1px] my-2 bg-gray-200"></div>
+                            <div>
+
+                                <ul class="space-y-1 text-sm">
+
+                                    <li><a href="#">Myntra Credit</a></li>
+                                    <li><a href="#">Coupons</a></li>
+                                    <li><a href="#">Saved Cards</a></li>
+                                    <li><a href="#">Saved VPA</a></li>
+                                    <li><a href="#">Saved Addresses</a></li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="Wishlist.html" class="flex flex-col items-center w-20 h-auto py-0 gap-0 text-gray-900 rounded-sm 
+                                       hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 
+                                       md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 
+                                       dark:hover:text-white md:dark:hover:bg-transparent">
+                            <i class="fa-regular fa-heart text-lg"></i>
+                            <span class="text-sm">Wishlist</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex flex-col items-center w-20 h-auto py-0 gap-0 text-gray-900 rounded-sm 
+                                       hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 
+                                       md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 
+                                       dark:hover:text-white md:dark:hover:bg-transparent">
+                            <i class="fa-solid fa-bag-shopping text-lg"></i>
+                            <span class="text-sm">Bags</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+    </nav>
+    <div class="max-w-7xl mx-auto p-4 mt-16">
+        <!-- Main Ad Section -->
+        <div class="flex flex-col md:flex-row items-center bg-gray-100 p-6 rounded-lg">
+            <img src="Img/Kids/explore-more-kids/h-kids.webp" alt="Innerwear Ad" class="w-full md:w-full rounded-lg">
+
+        </div>
+
+        <!-- Favorite Brands -->
+        <div class="mt-8 flex flex-col">
+            <h3 class="text-2xl font-semibold text-gray-700 ml-24 my-6">FAVOURITE BRANDS</h3>
+            <div class="flex flex-wrap justify-center items-center gap-2 mt-4">
+                <img src="Img/Kids/Allen-soly.jpeg" alt="Allen Solly Junior"
+                    class="h-32 border-2 border-yellow-300 rounded-full p-2 flex justify-center items-center">
+                <img src="Img/Kids/gimi-jomy.png" alt="United Colors of Benetton"
+                    class="h-32 border-2 border-yellow-300 rounded-full p-2">
+                <img src="Img/Kids/lilpickes.avif" alt="Nautinati"
+                    class="h-32 w-32 border-2  border-yellow-300 rounded-full p-2">
+                <img src="Img/Kids/mini-kids.jpeg" alt="U.S. Polo Assn. Kids"
+                    class="h-32 border-2 border-yellow-300 rounded-full p-2">
+                <img src="Img/Kids/Nautinty.png" alt="Mini Klub"
+                    class="h-32 w-32 border-2 border-yellow-300 rounded-full p-2">
+                <img src="Img/Kids/peppermints.jpeg" alt="Lil Picks"
+                    class="h-32 w-32 border-2 border-yellow-300 rounded-full p-2">
+                <img src="Img/Kids/United-color.png" alt="Peppermint"
+                    class="h-32 border-2 border-yellow-300 rounded-full p-2">
+                <img src="Img/Kids/YK.jpeg" alt="Gini & Jony" class="h-32 border-2 border-yellow-300 rounded-full p-2">
+
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <div class="  flex  gap-2 my-6 flex-col">
+            <h3 class="text-2xl font-semibold text-gray-700 ml-24 my-6">Iconic Brands</h3>
+            <div class="flex flex-wrap justify-center items-center gap-2 mt-4 bg-orange-300 p-2">
+
+                <img src="./Img/Kids/h&m.jpg" class="w-52 h-1/4 rounded-lg" alt="Casual Shoes">
+                <img src="./Img/Kids/mango-kids.jpg" class="w-52 h-1/4 rounded-lg" alt="Captivating">
+                <img src="./Img/Kids/chicho.jpg" class="w-52 h-1/4 rounded-lg" alt="Titan Casio">
+                <img src="./Img/Kids/marks-kids.jpg" class="w-52 h-1/4 rounded-lg" alt="Arrow Shoes">
+                <img src="./Img/Kids/tommy.jpg" class="w-52 h-1/4 rounded-lg" alt="Arrow Shoes">
+            </div>
+
+        </div>
+        <!-- Iconic brands -->
+        <div class="  flex  gap-2 my-6 flex-col">
+            <h3 class="text-2xl font-semibold text-gray-700 ml-24 my-6">Iconic Brands</h3>
+            <div id="Shopping_kids" class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 mx-12 gap-4">
+                <div class="kids-category"> <img src="./Img/Kids/fashin-kids/baby-care.webp" class="" alt="Error 404" />
+                </div>
+                <div class="kids-category"> <img src="./Img/Kids/fashin-kids/ethnic-wear.webp" class=""
+                        alt="Error 404" /></div>
+                <div class=""> <img src="./Img/Kids/fashin-kids/flip-flop.webp" class="" alt="Error 404" /></div>
+                <div class="kids-category"> <img src="./Img/Kids/fashin-kids/onesies.webp" class="" alt="Error 404" />
+                </div>
+                <div class="kids-category"> <img src="./Img/Kids/fashin-kids/protact-mask.webp" class=""
+                        alt="Error 404" /></div>
+                <div class="kids-category"> <img src="./Img/Kids/fashin-kids/shorts.webp" class="" alt="Error 404" />
+                </div>
+                <div class="kids-category"> <img src="./Img/Kids/fashin-kids/sleepwear.webp" class="" alt="Error 404" />
+                </div>
+                <div class="kids-category"> <img src="./Img/Kids/fashin-kids/t-shirts.webp" class="" alt="Error 404" />
+                </div>
+                <div class="kids-category"> <img src="./Img/Kids/fashin-kids/value-pack.webp" class=""
+                        alt="Error 404" /></div>
+                <div class="kids-category"> <img src="./Img/Kids/fashin-kids/protact-mask.webp" class=""
+                        alt="Error 404" /></div>
+            </div>
+        </div>
+        <!-- explore more  -->
+        <div class="  flex  gap-2 my-6 flex-col">
+            <h3 class="text-2xl font-semibold text-gray-700 ml-24 my-6">Explore More</h3>
+            <div id="explore-more-kids" class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 mx-12 gap-4">
+                <div><img src="./Img/Kids/explore-more-kids/explore-kids-1.webp" class="" alt="Error 404" /> </div>
+                <div><img src="./Img/Kids/explore-more-kids/explore-kids-2.webp" class="" alt="Error 404" /> </div>
+            </div>
+
+            <div class="flex">
+                <div><img src="./Img/Kids/explore-more-kids/explore-kids-3.webp" class="" alt="Error 404" /> </div>
+                <div><img src="./Img/Kids/explore-more-kids/explore-kids-4.webp" class="" alt="Error 404" /> </div>
+            </div>
+
+            <div class="flex">
+                <div><img src="./Img/Kids/explore-more-kids/explore-kids-5.webp" class="" alt="Error 404" /> </div>
+                <div><img src="./Img/Kids/explore-more-kids/explore-kids-6.webp" class="" alt="Error 404" /> </div>
+            </div>
+        </div>
+        <div class="  flex  gap-2 my-6 flex-col">
+            <h3 class="text-2xl font-semibold text-gray-700 ml-24 my-6">The Kids Space</h3>
+            <div id="Shopping_kids" class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 mx-12 gap-4">
+                <div><img src="./Img/Kids/explore-more-kids/kids-space.webp" class="" alt="Error 404" /> </div>
+                <div><img src="./Img/Kids/explore-more-kids/kids-space1.webp" class="" alt="Error 404" /> </div>
+            </div>
+        </div>
+
+        <footer class="bg-gray-100 py-8 px-4 sm:px-10">
+            <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Column 1: Online Shopping & Useful Links -->
+                <div>
+                    <h2 class="font-bold mb-2 uppercase text-[#3e4152] tracking-wider text-[1.8em]  max-h-[5em]">ONLINE
+                        SHOPPING</h2>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>Men</li>
+                        <li>Women</li>
+                        <li>Kids</li>
+                        <li>Home & Living</li>
+                        <li>Beauty</li>
+                        <li>Gift Cards</li>
+                        <li>Myntra Insider</li>
+                    </ul>
+                    <h2 class="font-bold mt-4 mb-2">USEFUL LINKS</h2>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>Blog</li>
+                        <li>Careers</li>
+                        <li>Site Map</li>
+                        <li>Corporate Information</li>
+                        <li>Whitehat</li>
+                        <li>Cleartrip</li>
+                    </ul>
+                </div>
+
+                <!-- Column 2: Customer Policies -->
+                <div>
+                    <h2 class="font-bold mb-2">CUSTOMER POLICIES</h2>
+                    <ul class="space-y-1 text-gray-600">
+                        <li>Contact Us</li>
+                        <li>FAQ</li>
+                        <li>T&C</li>
+                        <li>Terms of Use</li>
+                        <li>Track Orders</li>
+                        <li>Shipping</li>
+                        <li>Cancellation</li>
+                        <li>Returns</li>
+                        <li>Privacy Policy</li>
+                        <li>Grievance Redressal</li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: App Experience & Social Media -->
+                <div>
+                    <h2 class="font-bold mb-2">EXPERIENCE MYNTRA APP ON MOBILE</h2>
+                    <div class="flex space-x-2">
+                        <img src="./Img/Shop-by-Catagory/Google-play.png" class="w-32" alt="Google Play">
+                        <img src="./Img/Shop-by-Catagory/Play-store.png" class="w-32" alt="App Store">
+                    </div>
+                    <h2 class="font-bold mt-4 mb-2">KEEP IN TOUCH</h2>
+                    <div class="flex space-x-4">
+                        <i class="fa-brands fa-facebook w-6 text-2xl"></i>
+                        <i class="fa-brands fa-twitter w-6 text-2xl"></i>
+                        <i class="fa-brands fa-youtube w-6 text-2xl"></i>
+                        <i class="fa-brands fa-instagram w-6 text-2xl"></i>
+                    </div>
+                </div>
+
+                <!-- Column 4: Guarantee & Returns -->
+                <div class="text-gray-700">
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-people-robbery w-8 text-3xl"></i>
+                        <p><span class="font-bold">100% ORIGINAL</span> guarantee for all products at myntra.com</p>
+                    </div>
+                    <div class="flex items-center space-x-2 mt-4">
+                        <i class="fa-solid fa-retweet text-3xl"></i>
+                        <p><span class="font-bold">Return within 14 days</span> of receiving your order</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom Section -->
+            <div class="container mx-auto text-center md:text-left mt-8">
+                <div class="mb-8 border-b pb-4 text-gray-600">
+                    <div class="flex items-center my-4">
+                        <span class="font-bold text-gray-600">Popular Searches</span>
+                        <div class="w-auto h-[1px] mx-2 bg-gray-300 flex-1"></div>
+                    </div>
+                    <p class="text-sm text-gray-600">
+                        Makeup | Dresses For Girls | T-Shirts | Sandals | Headphones | Babydolls | Blazers For Men |
+                        Handbags | Ladies Watches | Bags | Sport Shoes | Reebok Shoes | Puma Shoes | Boxers | Wallets |
+                        Tops
+                        |
+                        Earrings | Fastrack Watches | Kurtis | Nike | Smart Watches | Titan Watches | Designer Blouse |
+                        Gowns | Rings | Cricket Shoes | Forever 21 | Eye Makeup | Photo Frames | Punjabi Suits | Bikini
+                        |
+                        Myntra Fashion Show | Lipstick | Saree | Watches | Dresses | Lehenga | Nike Shoes | Goggles |
+                        Bras |
+                        Suit | Chinos | Shoes | Adidas Shoes | Woodland Shoes | Jewellery | Designers Sarees
+                    </p>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between">
+                    <div class="text-sm text-gray-600 mb-4 sm:mb-0">
+                        In case of any concern, <a href="#" class="text-blue-600 font-semibold">Contact Us</a>
+                    </div>
+                    <div class="text-sm text-gray-500">&copy; 2025 www.Mailocollection.com. All rights reserved.</div>
+                    <div class="text-sm text-gray-500">A Flipkart company</div>
+                </div>
+                <div class="mt-6 flex flex-col sm:flex-row justify-between">
+                    <div>
+                        <h3 class="font-bold text-sm">Registered Office Address</h3>
+                        <p class="text-sm text-gray-600">
+                            Buildings Alyssa, <br />
+                            Begonia and Clover situated in Embassy Tech Village, <br />
+                            Outer Ring Road, <br />
+                            Devarabeesanahalli Village, <br />
+                            Varthur Hobli, <br />
+                            Islamabad - 560103, Pakistan
+                        </p>
+                    </div>
+                    <div class="flex flex-col justify-end mt-4 sm:mt-0">
+                        <p class="text-sm text-gray-600">CIN: U72300KA2007PTC041799</p>
+                        <p class="text-sm text-gray-600">
+                            Telephone: <a href="tel:+918061561999"
+                                class="text-blue-600 font-semibold">+92-316-8323253</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+</body>
+
+</html>
