@@ -3,7 +3,7 @@ const products = [
     {
         id: 1,
         name: "Men Shirt",
-        image: "img/Men-catagories/shirt_4.webp",
+        image: "../img/Men-catagories/shirt_4.webp",
         price: "$49.99",
         discountPrice: "$39.99",
         category: "men",
@@ -14,7 +14,7 @@ const products = [
     {
         id: 2,
         name: "Men Shirt",
-        image: "img/Men-catagories/shirt_2.webp",
+        image: "../img/Men-catagories/shirt_2.webp",
         price: "$59.99",
         discountPrice: "$44.99",
         category: "men",
@@ -25,7 +25,7 @@ const products = [
     {
         id: 3,
         name: "Men Shirt",
-        image: "img/Men-catagories/shirt_3.webp",
+        image: "../img/Men-catagories/shirt_3.webp",
         price: "$89.99",
         discountPrice: "$69.99",
         category: "men",
@@ -36,7 +36,7 @@ const products = [
     {
         id: 4,
         name: "Men Shirt",
-        image: "img/Men-catagories/men_2.webp",
+        image: "../img/Men-catagories/men_2.webp",
         price: "$79.99",
         discountPrice: "$69.99",
         category: "men",
@@ -47,7 +47,7 @@ const products = [
     {
         id: 5,
         name: "Men T-Shirt",
-        image: "img/Men-catagories/t-shirt.webp",
+        image: "../img/Men-catagories/t-shirt.webp",
         price: "$99.99",
         discountPrice: "$74.99",
         category: "men",
@@ -58,7 +58,7 @@ const products = [
     {
         id: 6,
         name: "Men T-Shirt",
-        image: "img/Men-catagories/t-shirt2.webp",
+        image: "../img/Men-catagories/t-shirt2.webp",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "men",
@@ -69,7 +69,7 @@ const products = [
     {
         id: 7,
         name: "Men T-Shirt",
-        image: "img/Men-catagories/t-shirt3.webp",
+        image: "../img/Men-catagories/t-shirt3.webp",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "men",
@@ -80,7 +80,7 @@ const products = [
     {
         id: 8,
         name: "Men T-Shirt",
-        image: "img/Men-catagories/t-shirt4.webp",
+        image: "../img/Men-catagories/t-shirt4.webp",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "men",
@@ -91,7 +91,7 @@ const products = [
     {
         id: 9,
         name: "Men Jeans",
-        image: "img/Men-catagories/jeans.webp",
+        image: "../img/Men-catagories/jeans.webp",
         price: "$49.99",
         discountPrice: "$39.99",
         category: "men",
@@ -102,7 +102,7 @@ const products = [
     {
         id: 10,
         name: "Men Jeans",
-        image: "img/Men-catagories/jeans2.webp",
+        image: "../img/Men-catagories/jeans2.webp",
         price: "$59.99",
         discountPrice: "$44.99",
         category: "men",
@@ -113,7 +113,7 @@ const products = [
     {
         id: 11,
         name: "Men Jeans",
-        image: "img/Men-catagories/jeans3.webp",
+        image: "../img/Men-catagories/jeans3.webp",
         price: "$89.99",
         discountPrice: "$69.99",
         category: "men",
@@ -124,7 +124,7 @@ const products = [
     {
         id: 12,
         name: "Men Jeans",
-        image: "img/Men-catagories/jeans4.webp",
+        image: "../img/Men-catagories/jeans4.webp",
         price: "$79.99",
         discountPrice: "$69.99",
         category: "men",
@@ -135,7 +135,7 @@ const products = [
     {
         id: 13,
         name: "Men Casual Shoes",
-        image: "img/Men-catagories/casual-shoes.webp",
+        image: "../img/Men-catagories/casual-shoes.webp",
         price: "$99.99",
         discountPrice: "$74.99",
         category: "men",
@@ -146,7 +146,7 @@ const products = [
     {
         id: 14,
         name: "Men Casual Shoes",
-        image: "img/Men-catagories/casual4-shoes.webp",
+        image: "../img/Men-catagories/casual4-shoes.webp",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "men",
@@ -157,7 +157,7 @@ const products = [
     {
         id: 15,
         name: "Men Casual Shoes",
-        image: "img/Men-catagories/casual2-shoes.webp",
+        image: "../img/Men-catagories/casual2-shoes.webp",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "men",
@@ -168,7 +168,7 @@ const products = [
     {
         id: 16,
         name: "Men Casual Shoes",
-        image: "img/Men-catagories/casual3-shoes.webp",
+        image: "../img/Men-catagories/casual3-shoes.webp",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "men",
@@ -179,7 +179,7 @@ const products = [
     {
         id: 21,
         name: "Men Sweatshirts",
-        image: "img/Men-catagories/sweatshirt.webp",
+        image: "../img/Men-catagories/sweatshirt.webp",
         price: "$99.99",
         discountPrice: "$74.99",
         category: "men",
@@ -190,7 +190,7 @@ const products = [
     {
         id: 22,
         name: "Men Sweatshirts",
-        image: "img/Men-catagories/sweatshirt2.webp",
+        image: "../img/Men-catagories/sweatshirt2.webp",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "men",
@@ -201,7 +201,7 @@ const products = [
     {
         id: 23,
         name: "Men Sweatshirts",
-        image: "img/Men-catagories/sweatshirt3.webp",
+        image: "../img/Men-catagories/sweatshirt3.webp",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "men",
@@ -212,7 +212,7 @@ const products = [
     {
         id: 24,
         name: "Men Sweatshirts",
-        image: "img/Men-catagories/sweatshirt4.webp",
+        image: "../img/Men-catagories/sweatshirt4.webp",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "men",
@@ -223,7 +223,7 @@ const products = [
     {
         id: 25,
         name: "Men Jackets",
-        image: "img/Men-catagories/jackets.webp",
+        image: "../img/Men-catagories/jackets.webp",
         price: "$49.99",
         discountPrice: "$39.99",
         category: "men",
@@ -234,7 +234,7 @@ const products = [
     {
         id: 26,
         name: "Men Jackets",
-        image: "img/Men-catagories/jackets2.webp",
+        image: "../img/Men-catagories/jackets2.webp",
         price: "$59.99",
         discountPrice: "$44.99",
         category: "men",
@@ -245,7 +245,7 @@ const products = [
     {
         id: 27,
         name: "Men Jackets",
-        image: "img/Men-catagories/jackets3.webp",
+        image: "../img/Men-catagories/jackets3.webp",
         price: "$89.99",
         discountPrice: "$69.99",
         category: "men",
@@ -256,7 +256,7 @@ const products = [
     {
         id: 28,
         name: "Men Jackets",
-        image: "img/Men-catagories/jackets4.webp",
+        image: "../img/Men-catagories/jackets4.webp",
         price: "$79.99",
         discountPrice: "$69.99",
         category: "men",
@@ -267,7 +267,7 @@ const products = [
     {
         id: 29,
         name: "Men Shorts",
-        image: "img/Men-catagories/short4.webp",
+        image: "../img/Men-catagories/short4.webp",
         price: "$99.99",
         discountPrice: "$74.99",
         category: "men",
@@ -278,7 +278,7 @@ const products = [
     {
         id: 30,
         name: "Men Shorts",
-        image: "img/Men-catagories/short3.webp",
+        image: "../img/Men-catagories/short3.webp",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "men",
@@ -289,7 +289,7 @@ const products = [
     {
         id: 31,
         name: "Men Shorts",
-        image: "img/Men-catagories/short2.webp",
+        image: "../img/Men-catagories/short2.webp",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "men",
@@ -300,7 +300,7 @@ const products = [
     {
         id: 32,
         name: "Men Shorts",
-        image: "img/Men-catagories/short.webp",
+        image: "../img/Men-catagories/short.webp",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "men",
@@ -311,7 +311,7 @@ const products = [
     {
         id: 33,
         name: "Men Shirt",
-        image: "img/women-catagories/sareas.webp",
+        image: "../img/women-catagories/sareas.webp",
         price: "$49.99",
         discountPrice: "$39.99",
         category: "women",
@@ -322,7 +322,7 @@ const products = [
     {
         id: 34,
         name: "Men Shirt",
-        image: "img/women-catagories/sareas2.webp",
+        image: "../img/women-catagories/sareas2.webp",
         price: "$59.99",
         discountPrice: "$44.99",
         category: "women",
@@ -333,7 +333,7 @@ const products = [
     {
         id: 35,
         name: "Men Shirt",
-        image: "img/women-catagories/sareas3.webp",
+        image: "../img/women-catagories/sareas3.webp",
         price: "$89.99",
         discountPrice: "$69.99",
         category: "women",
@@ -344,7 +344,7 @@ const products = [
     {
         id: 36,
         name: "Women Shirt",
-        image: "img/women-catagories/sareas4.webp",
+        image: "../img/women-catagories/sareas4.webp",
         price: "$79.99",
         discountPrice: "$69.99",
         category: "women",
@@ -355,7 +355,7 @@ const products = [
     {
         id: 37,
         name: "Women T-Shirt",
-        image: "img/women-catagories/w-Tshirt.webp",
+        image: "../img/women-catagories/w-Tshirt.webp",
         price: "$99.99",
         discountPrice: "$74.99",
         category: "women",
@@ -366,7 +366,7 @@ const products = [
     {
         id: 38,
         name: "Women T-Shirt",
-        image: "img/women-catagories/w-Tshirt2.webp",
+        image: "../img/women-catagories/w-Tshirt2.webp",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "women",
@@ -377,7 +377,7 @@ const products = [
     {
         id: 39,
         name: "Women T-Shirt",
-        image: "img/women-catagories/w-Tshirt3.webp",
+        image: "../img/women-catagories/w-Tshirt3.webp",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "women",
@@ -388,7 +388,7 @@ const products = [
     {
         id: 40,
         name: "Women T-Shirt",
-        image: "img/women-catagories/w-Tshirt4.webp",
+        image: "../img/women-catagories/w-Tshirt4.webp",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "women",
@@ -399,7 +399,7 @@ const products = [
     {
         id: 41,
         name: "Sweat Shirt",
-        image: "img/women-catagories/w-sweater.webp",
+        image: ".../img/women-catagories/w-sweater.webp",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "women",
@@ -410,7 +410,7 @@ const products = [
     {
         id: 42,
         name: "Women SweatShirt",
-        image: "img/women-catagories/w-sweater2.webp",
+        image: "../img/women-catagories/w-sweater2.webp",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "women",
@@ -421,7 +421,7 @@ const products = [
     {
         id: 33,
         name: "Women SweatShirt",
-        image: "img/women-catagories/w-sweater3.webp",
+        image: "../img/women-catagories/w-sweater3.webp",
         price: "$49.99",
         discountPrice: "$39.99",
         category: "women",
@@ -432,7 +432,7 @@ const products = [
     {
         id: 34,
         name:"Women SweatShirt",
-        image: "img/women-catagories/w-sweater4.webp",
+        image: "../img/women-catagories/w-sweater4.webp",
         price: "$59.99",
         discountPrice: "$44.99",
         category: "women",
@@ -443,7 +443,7 @@ const products = [
     {
         id: 35,
         name: "Women Trouser",
-        image: "img/women-catagories/w-Trouser.webp",
+        image: "../img/women-catagories/w-Trouser.webp",
         price: "$89.99",
         discountPrice: "$69.99",
         category: "women",
@@ -454,7 +454,7 @@ const products = [
     {
         id: 36,
         name: "Women Trouser",
-        image: "img/women-catagories/w-Trouser2.webp",
+        image: "../img/women-catagories/w-Trouser2.webp",
         price: "$79.99",
         discountPrice: "$69.99",
         category: "women",
@@ -465,7 +465,7 @@ const products = [
     {
         id: 37,
         name: "Women Trouser",
-        image: "img/women-catagories/w-Trouser3.webp",
+        image: "../img/women-catagories/w-Trouser3.webp",
         price: "$99.99",
         discountPrice: "$74.99",
         category: "women",
@@ -476,7 +476,7 @@ const products = [
     {
         id: 38,
         name: "Women Trouser",
-        image: "img/women-catagories/w-Trouser4.webp",
+        image: "../img/women-catagories/w-Trouser4.webp",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "women",
@@ -487,7 +487,7 @@ const products = [
     {
         id: 39,
         name: "Women Jacket",
-        image: "img/women-catagories/w-Jacket.webp",
+        image: "../img/women-catagories/w-Jacket.webp",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "women",
@@ -498,7 +498,7 @@ const products = [
     {
         id: 40,
         name: "Women Jacket",
-        image: "img/women-catagories/w-Jacket2.webp",
+        image: "../img/women-catagories/w-Jacket2.webp",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "women",
@@ -509,7 +509,7 @@ const products = [
     {
         id: 41,
         name: "Women Jacket",
-        image: "img/women-catagories/w-Jacket3.webp",
+        image: "../img/women-catagories/w-Jacket3.webp",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "women",
@@ -520,7 +520,7 @@ const products = [
     {
         id: 42,
         name: "Women Jacket",
-        image: "img/women-catagories/w-Jacket4.webp",
+        image: "../img/women-catagories/w-Jacket4.webp",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "women",
@@ -531,7 +531,7 @@ const products = [
     {
         id: 43,
         name: "Women Jeans",
-        image: "img/women-catagories/w-Jeans.webp",
+        image: ".../img/women-catagories/w-Jeans.webp",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "women",
@@ -542,7 +542,7 @@ const products = [
     {
         id: 42,
         name: "Women Shoes",
-        image: "img/women-catagories/w-Shoes.webp",
+        image: ".../img/women-catagories/w-Shoes.webp",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "women",
@@ -655,7 +655,7 @@ const productCard = document.createElement("div");
 productCard.className = "group bg-white h-76 p-4 rounded-lg shadow-md text-center relative";
 
 productCard.innerHTML = `
-    <img src="img/women-catagories/w-Shoes.webp" alt="${product.name}" class="w-full h-auto object-cover rounded-lg">
+    <img src="${product.image}" alt="${product.name}" class="w-full h-auto object-cover rounded-lg">
     
     <!-- Name, Wishlist & Price Container -->
     <div class="mt-2 transition-opacity duration-300 relative">
