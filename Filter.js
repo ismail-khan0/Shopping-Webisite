@@ -655,7 +655,7 @@ const productCard = document.createElement("div");
 productCard.className = "group bg-white h-76 p-4 rounded-lg shadow-md text-center relative";
 
 productCard.innerHTML = `
-    <img src="${product.image}" alt="${product.name}" class="w-full h-auto object-cover rounded-lg">
+    <img src="img/women-catagories/w-Shoes.webp" alt="${product.name}" class="w-full h-auto object-cover rounded-lg">
     
     <!-- Name, Wishlist & Price Container -->
     <div class="mt-2 transition-opacity duration-300 relative">
