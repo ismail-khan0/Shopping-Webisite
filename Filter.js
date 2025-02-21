@@ -3,7 +3,7 @@ const products = [
     {
         id: 1,
         name: "Men Shirt",
-        image: "./img/Men-catagories/shirt_4.webp",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkt_8MCuTrS_sSVxXotjZ834EKundXSAx_RQ&s",
         price: "$49.99",
         discountPrice: "$39.99",
         category: "men",
