@@ -662,7 +662,7 @@ productCard.innerHTML = `
        
         <h3 class="text-lg font-semibold group-hover:opacity-0 transition-opacity duration-300">${product.name}</h3>
 
-        <!-- Wishlist Button (Shown on Hover) -->s
+        <!-- Wishlist Button (Shown on Hover) -->
         <div class="absolute top-0 left-0 w-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <button class="wishlist-btn bg-red-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-red-600">
                 ❤️ Add to Wishlist
