@@ -3,7 +3,7 @@ const products = [
     {
         id: 1,
         name: "Men Shirt",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkt_8MCuTrS_sSVxXotjZ834EKundXSAx_RQ&s",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6-dfl38-f-0uEbqICEIVFivu7D1Y_2q6f5Q&s",
         price: "$49.99",
         discountPrice: "$39.99",
         category: "men",
@@ -652,17 +652,17 @@ return;
 // Render filtered products
 filteredProducts.forEach(product => {
 const productCard = document.createElement("div");
-productCard.className = "group bg-white h-76 p-4 rounded-lg shadow-md text-center relative";
+productCard.className = "group bg-white h-[340px] p-4 rounded-lg shadow-md text-center relative";
 
 productCard.innerHTML = `
-    <img src="${product.image}" alt="${product.name}" class="w-full h-auto object-cover rounded-lg">
+    <img src="${product.image}" alt="${product.name}" class="w-full h-auto object-cover h-60 rounded-lg">
     
     <!-- Name, Wishlist & Price Container -->
     <div class="mt-2 transition-opacity duration-300 relative">
        
         <h3 class="text-lg font-semibold group-hover:opacity-0 transition-opacity duration-300">${product.name}</h3>
 
-        <!-- Wishlist Button (Shown on Hover) -->
+        <!-- Wishlist Button (Shown on Hover) -->s
         <div class="absolute top-0 left-0 w-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             <button class="wishlist-btn bg-red-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-red-600">
                 ❤️ Add to Wishlist
