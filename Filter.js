@@ -310,7 +310,7 @@ const products = [
     },
     {
         id: 33,
-        name: "Men Shirt",
+        name: "Women Shirt",
         image: "img/women-catagories/sareas.webp",
         price: "$49.99",
         discountPrice: "$39.99",
@@ -321,7 +321,7 @@ const products = [
     },
     {
         id: 34,
-        name: "Men Shirt",
+        name: "Women Shirt",
         image: "img/women-catagories/sareas2.webp",
         price: "$59.99",
         discountPrice: "$44.99",
@@ -332,7 +332,7 @@ const products = [
     },
     {
         id: 35,
-        name: "Men Shirt",
+        name: "Women Shirt",
         image: "img/women-catagories/sareas3.webp",
         price: "$89.99",
         discountPrice: "$69.99",
