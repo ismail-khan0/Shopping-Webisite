@@ -749,7 +749,10 @@ displayProducts();
 // Initial render
 displayProducts();
 
-
+function redirectToFilter(Catagory) {
+    localStorage.setItem("filterCategory", Catagory); // Store "women" category in localStorage
+    window.location.href = "filter.html"; // Redirect to filter page
+  }
 // On the filter.html page, you can add the following script to handle the filter logic
 document.addEventListener("DOMContentLoaded", function () {
     const filterCategory = localStorage.getItem("filterCategory");
