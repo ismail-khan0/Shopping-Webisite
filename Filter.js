@@ -3,7 +3,7 @@ const products = [
     {
         id: 1,
         name: "Men Shirt",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6-dfl38-f-0uEbqICEIVFivu7D1Y_2q6f5Q&s",
+        image: "https://img.freepik.com/free-photo/basic-green-shirt-men-rsquo-s-fashion-apparel-studio-shoot_53876-101197.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$49.99",
         discountPrice: "$39.99",
         category: "men",
@@ -14,7 +14,7 @@ const products = [
     {
         id: 2,
         name: "Men Shirt",
-        image: "img/Men-catagories/shirt_2.webp",
+        image: "https://img.freepik.com/free-photo/young-handsome-businessman-black-shirt_158595-4806.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$59.99",
         discountPrice: "$44.99",
         category: "men",
@@ -25,7 +25,7 @@ const products = [
     {
         id: 3,
         name: "Men Shirt",
-        image: "img/Men-catagories/shirt_3.webp",
+        image: "https://img.freepik.com/premium-photo/handsome-bearded-man-casual-clothes-gray-wall_155104-58.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$89.99",
         discountPrice: "$69.99",
         category: "men",
@@ -36,18 +36,18 @@ const products = [
     {
         id: 4,
         name: "Men Shirt",
-        image: "img/Men-catagories/men_2.webp",
+        image: "https://img.freepik.com/free-photo/medium-shot-boy-posing-with-monochrome-outfit_23-2151044509.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$79.99",
         discountPrice: "$69.99",
         category: "men",
         subcategory: "Shirts",
         brands: "WOOSTRO",
-        color:""
+        color:"Brown"
     },
     {
         id: 5,
         name: "Men T-Shirt",
-        image: "img/Men-catagories/t-shirt.webp",
+        image: "https://img.freepik.com/free-photo/serious-young-man-standing-isolated-yellow-wall_171337-16803.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$99.99",
         discountPrice: "$74.99",
         category: "men",
@@ -58,7 +58,7 @@ const products = [
     {
         id: 6,
         name: "Men T-Shirt",
-        image: "img/Men-catagories/t-shirt2.webp",
+        image: "https://img.freepik.com/premium-photo/man-wearing-brown-relaxed-fit-oversized-tshiirt-isolated-with-white-background_758367-178700.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "men",
@@ -69,18 +69,18 @@ const products = [
     {
         id: 7,
         name: "Men T-Shirt",
-        image: "img/Men-catagories/t-shirt3.webp",
+        image: "https://img.freepik.com/premium-photo/handsome-young-man-sitting-with-hand-face-isolated-bisque-background_676921-12785.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "men",
         subcategory: "Tshirts",
         brands: "DISPENSER",
-        color:""
+        color:"Brown"
     },
     {
         id: 8,
         name: "Men T-Shirt",
-        image: "img/Men-catagories/t-shirt4.webp",
+        image: "https://img.freepik.com/free-photo/portrait-smiling-young-man_329181-2144.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "men",
@@ -91,7 +91,7 @@ const products = [
     {
         id: 9,
         name: "Men Jeans",
-        image: "img/Men-catagories/jeans.webp",
+        image: "https://img.freepik.com/premium-photo/guy-standing-black-background_221436-1208.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$49.99",
         discountPrice: "$39.99",
         category: "men",
@@ -102,7 +102,7 @@ const products = [
     {
         id: 10,
         name: "Men Jeans",
-        image: "img/Men-catagories/jeans2.webp",
+        image: "https://img.freepik.com/free-photo/man-portrait_1296-626.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$59.99",
         discountPrice: "$44.99",
         category: "men",
@@ -113,7 +113,7 @@ const products = [
     {
         id: 11,
         name: "Men Jeans",
-        image: "img/Men-catagories/jeans3.webp",
+        image: "https://img.freepik.com/premium-photo/portrait-modern-young-man-posing-street_519356-400.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$89.99",
         discountPrice: "$69.99",
         category: "men",
@@ -124,7 +124,7 @@ const products = [
     {
         id: 12,
         name: "Men Jeans",
-        image: "img/Men-catagories/jeans4.webp",
+        image: "https://img.freepik.com/free-photo/man-dancer-posing-studio_1303-10919.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$79.99",
         discountPrice: "$69.99",
         category: "men",
@@ -135,7 +135,7 @@ const products = [
     {
         id: 13,
         name: "Men Casual Shoes",
-        image: "img/Men-catagories/casual-shoes.webp",
+        image: "https://img.freepik.com/free-photo/white-sneakers-woman-model_53876-97149.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$99.99",
         discountPrice: "$74.99",
         category: "men",
@@ -146,18 +146,18 @@ const products = [
     {
         id: 14,
         name: "Men Casual Shoes",
-        image: "img/Men-catagories/casual4-shoes.webp",
+        image: "https://img.freepik.com/free-photo/children-legs-dangling_23-2147797898.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "men",
         subcategory: "Casual Shoes",
         brands: "Pepe jeans",
-        color:""
+        color:"Black"
     },
     {
         id: 15,
         name: "Men Casual Shoes",
-        image: "img/Men-catagories/casual2-shoes.webp",
+        image: "https://img.freepik.com/free-photo/male-foot-with-brown-leather-shoes-jeans_1150-5999.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "men",
@@ -168,18 +168,18 @@ const products = [
     {
         id: 16,
         name: "Men Casual Shoes",
-        image: "img/Men-catagories/casual3-shoes.webp",
+        image: "https://img.freepik.com/free-photo/man-jeans-with-cardboard-bouquet-flowers_114579-2389.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "men",
         subcategory: "Casual Shoes",
-        brands: "Pepe jeans",
-        color:""
+        brands: "Shoes",
+        color:"Blue"
     },
     {
         id: 21,
         name: "Men Sweatshirts",
-        image: "img/Men-catagories/sweatshirt.webp",
+        image: "https://img.freepik.com/free-photo/young-handsome-businessman-black-shirt-black-suit_158595-4808.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybridp",
         price: "$99.99",
         discountPrice: "$74.99",
         category: "men",
@@ -190,7 +190,7 @@ const products = [
     {
         id: 22,
         name: "Men Sweatshirts",
-        image: "img/Men-catagories/sweatshirt2.webp",
+        image: "https://img.freepik.com/free-photo/fashionable-man-winter-knitted-clothes_158595-4105.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "men",
@@ -201,7 +201,7 @@ const products = [
     {
         id: 23,
         name: "Men Sweatshirts",
-        image: "img/Men-catagories/sweatshirt3.webp",
+        image: "https://img.freepik.com/free-photo/close-up-portrait-man-shirt-mockup_23-2149260954.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "men",
@@ -212,7 +212,7 @@ const products = [
     {
         id: 24,
         name: "Men Sweatshirts",
-        image: "img/Men-catagories/sweatshirt4.webp",
+        image: "https://img.freepik.com/free-photo/man-blue-sweater-stands-straight-holding-his-head-up_8353-1113.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "men",
@@ -223,18 +223,18 @@ const products = [
     {
         id: 25,
         name: "Men Jackets",
-        image: "img/Men-catagories/jackets.webp",
+        image: "https://img.freepik.com/free-photo/portrait-handsome-young-model-man-dressed-jeans-clothes-posing-isolated_158538-9094.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$49.99",
         discountPrice: "$39.99",
         category: "men",
         subcategory: "Jackets",
         brands: "WOOSTRO",
-        color:""
+        color:"Navy blue"
     },
     {
         id: 26,
         name: "Men Jackets",
-        image: "img/Men-catagories/jackets2.webp",
+        image: "https://img.freepik.com/free-photo/man-with-phone-outside_1303-5869.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$59.99",
         discountPrice: "$44.99",
         category: "men",
@@ -245,29 +245,29 @@ const products = [
     {
         id: 27,
         name: "Men Jackets",
-        image: "img/Men-catagories/jackets3.webp",
+        image: "https://img.freepik.com/free-photo/rich-man-with-beard-thinking-about-business_1153-7869.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$89.99",
         discountPrice: "$69.99",
         category: "men",
         subcategory: "Jackets",
         brands: "DISPENSER",
-        color:""
+        color:"Maroon"
     },
     {
         id: 28,
         name: "Men Jackets",
-        image: "img/Men-catagories/jackets4.webp",
+        image: "https://img.freepik.com/free-photo/clean-latin-fresh-natural-one_1368-2259.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$79.99",
         discountPrice: "$69.99",
         category: "men",
         subcategory: "Jackets",
         brands: "Pepe jeans",
-        color:""
+        color:"Black"
     },
     {
         id: 29,
         name: "Men Shorts",
-        image: "img/Men-catagories/short4.webp",
+        image: "https://img.freepik.com/premium-photo/male-tourist-park_38810-4419.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$99.99",
         discountPrice: "$74.99",
         category: "men",
@@ -278,7 +278,7 @@ const products = [
     {
         id: 30,
         name: "Men Shorts",
-        image: "img/Men-catagories/short3.webp",
+        image: "https://img.freepik.com/free-photo/front-view-lifeguard-doing-his-job_23-2149864232.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "men",
@@ -289,7 +289,7 @@ const products = [
     {
         id: 31,
         name: "Men Shorts",
-        image: "img/Men-catagories/short2.webp",
+        image: "https://img.freepik.com/free-photo/men-beige-long-sleeves-shirt-minimal-outfit_53876-96983.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "men",
@@ -300,7 +300,7 @@ const products = [
     {
         id: 32,
         name: "Men Shorts",
-        image: "img/Men-catagories/short.webp",
+        image: "https://img.freepik.com/free-photo/man-black-shorts-summer-apparel-shoot_53876-125277.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "men",
@@ -311,51 +311,51 @@ const products = [
     {
         id: 33,
         name: "Women Shirt",
-        image: "img/women-catagories/sareas.webp",
+        image: "https://img.freepik.com/free-photo/picture-handsome-caucasian-woman-with-long-dark-wavy-hair-white-shirt-black-pants-heels-posing-camera_132075-9136.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$49.99",
         discountPrice: "$39.99",
         category: "women",
         subcategory: "Shirts",
         brands: "Pepe jeans",
-        color:""
+        color:"White"
     },
     {
         id: 34,
         name: "Women Shirt",
-        image: "img/women-catagories/sareas2.webp",
+        image: "https://img.freepik.com/free-photo/fashion-photo-young-magnificent-woman-black-shirt_158595-1040.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$59.99",
         discountPrice: "$44.99",
         category: "women",
         subcategory: "Shirts",
         brands: "Masch Sports",
-        color:""
+        color:"Black"
     },
     {
         id: 35,
         name: "Women Shirt",
-        image: "img/women-catagories/sareas3.webp",
+        image: "https://img.freepik.com/free-photo/young-beautiful-female-posing-with-hands-waist-shirt-looking-charming_176474-113440.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$89.99",
         discountPrice: "$69.99",
         category: "women",
         subcategory: "Shirts",
         brands: "Friskers",
-        color:""
+        color:"Red"
     },
     {
         id: 36,
         name: "Women Shirt",
-        image: "img/women-catagories/sareas4.webp",
+        image: "https://img.freepik.com/free-photo/pretty-young-lady-wearing-red-dress-while-posing-street-with-car-building-background-city-lifestyle_132075-5897.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$79.99",
         discountPrice: "$69.99",
         category: "women",
         subcategory: "Shirts",
         brands: "WOOSTRO",
-        color:""
+        color:"Maroon"
     },
     {
         id: 37,
         name: "Women T-Shirt",
-        image: "img/women-catagories/w-Tshirt.webp",
+        image: "https://img.freepik.com/free-photo/portrait-young-woman-smiling_23-2149374974.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$99.99",
         discountPrice: "$74.99",
         category: "women",
@@ -366,18 +366,18 @@ const products = [
     {
         id: 38,
         name: "Women T-Shirt",
-        image: "img/women-catagories/w-Tshirt2.webp",
+        image: "https://img.freepik.com/free-photo/pretty-girl-with-long-hair-marsala-sweater-grey-wall-she-wears-knitted-hat-holds-camera-hands-smiling_197531-2505.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "women",
         subcategory: "Tshirts",
         brands: "DISPENSER",
-        color:"Black"
+        color:"Maroon"
     },
     {
         id: 39,
         name: "Women T-Shirt",
-        image: "img/women-catagories/w-Tshirt3.webp",
+        image: "https://img.freepik.com/free-photo/young-delivery-girl-blue-uniform-cap-smiling-confident-fixing-her-cap-standing-pink-wall_141793-63827.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "women",
@@ -388,7 +388,7 @@ const products = [
     {
         id: 40,
         name: "Women T-Shirt",
-        image: "img/women-catagories/w-Tshirt4.webp",
+        image: "https://img.freepik.com/premium-photo/serious-young-woman-intshirt-denim-pants-posing-with-hands-pockets-isolated-background_482921-2234.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "women",
@@ -399,7 +399,7 @@ const products = [
     {
         id: 41,
         name: "Sweat Shirt",
-        image: "img/women-catagories/w-sweater.webp",
+        image: "https://img.freepik.com/free-photo/woman-black-sweater-shows-sadness_140725-7572.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "women",
@@ -410,7 +410,7 @@ const products = [
     {
         id: 42,
         name: "Women SweatShirt",
-        image: "img/women-catagories/w-sweater2.webp",
+        image: "https://img.freepik.com/free-photo/woman-white-basic-sweater-casual-apparel_53876-102148.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "women",
@@ -421,18 +421,18 @@ const products = [
     {
         id: 43,
         name: "Women SweatShirt",
-        image: "img/women-catagories/w-sweater3.webp",
+        image: "https://img.freepik.com/free-photo/cheerful-woman-showing-direction-with-right-hand-gesturing-while-sincerely-smiling-camera_651396-3705.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$49.99",
         discountPrice: "$39.99",
         category: "women",
         subcategory: "Sweatshirts",
         brands: "Pepe jeans",
-        color:""
+        color:"Blue"
     },
     {
         id: 44,
         name:"Women SweatShirt",
-        image: "img/women-catagories/w-sweater4.webp",
+        image: "https://img.freepik.com/free-photo/rebel-girl-hat-showing-gesture-camera_23-2147778836.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$59.99",
         discountPrice: "$44.99",
         category: "women",
@@ -443,7 +443,7 @@ const products = [
     {
         id: 45,
         name: "Women Trouser",
-        image: "img/women-catagories/w-Trouser.webp",
+        image: "https://img.freepik.com/free-photo/full-length-portrait-beautiful-woman-looking_74855-5067.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$89.99",
         discountPrice: "$69.99",
         category: "women",
@@ -454,7 +454,7 @@ const products = [
     {
         id: 46,
         name: "Women Trouser",
-        image: "img/women-catagories/w-Trouser2.webp",
+        image: "https://img.freepik.com/free-photo/outdoor-fashion-portrait-stylish-pretty-young-woman-wearing-bohemian-outfit-vintage-hat-long-blonde-hairs-enjoy-free-sunny-autumn-day-good-weather-chill-relax-joy-vacation_291049-741.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$79.99",
         discountPrice: "$69.99",
         category: "women",
@@ -465,7 +465,7 @@ const products = [
     {
         id: 47,
         name: "Women Trouser",
-        image: "img/women-catagories/w-Trouser3.webp",
+        image: "https://img.freepik.com/premium-photo/beautiful-business-woman-stands-white-background_160672-5006.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$99.99",
         discountPrice: "$74.99",
         category: "women",
@@ -476,18 +476,18 @@ const products = [
     {
         id: 48,
         name: "Women Trouser",
-        image: "img/women-catagories/w-Trouser4.webp",
+        image: "https://img.freepik.com/free-photo/woman-posing_1303-3738.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "women",
         subcategory: "Trousers",
         brands: "DISPENSER",
-        color:"Black"
+        color:"Blue"
     },
     {
         id: 49,
         name: "Women Jacket",
-        image: "img/women-catagories/w-Jacket.webp",
+        image: "https://img.freepik.com/free-photo/blonde-girl-wearing-red-coat-snowy-field_273443-1074.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "women",
@@ -498,7 +498,7 @@ const products = [
     {
         id: 50,
         name: "Women Jacket",
-        image: "img/women-catagories/w-Jacket2.webp",
+        image: "https://img.freepik.com/free-photo/white-women-s-coat-outerwear-casual-fashion_53876-102849.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "women",
@@ -509,18 +509,18 @@ const products = [
     {
         id: 51,
         name: "Women Jacket",
-        image: "img/women-catagories/w-Jacket3.webp",
+        image: "https://img.freepik.com/free-photo/woman-posing_1303-3721.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "women",
         subcategory: "Jackets",
         brands: "Pepe jeans",
-        color:"White"
+        color:"Black"
     },
     {
         id: 52,
         name: "Women Jacket",
-        image: "img/women-catagories/w-Jacket4.webp",
+        image: "https://img.freepik.com/free-photo/woman-model-demonstrating-winter-cloths_1303-16967.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "women",
@@ -531,7 +531,29 @@ const products = [
     {
         id: 53,
         name: "Women Jeans",
-        image: "img/women-catagories/w-Jeans.webp",
+        image: "https://img.freepik.com/free-photo/full-length-portrait-cute-woman-gray-wall_231208-5552.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
+        price: "$69.99",
+        discountPrice: "$49.99",
+        category: "women",
+        subcategory: "Jeans",
+        brands: "Pepe jeans",
+        color:"Navy Blue"
+    },
+    {
+        id: 54,
+        name: "Women Shoes",
+        image: "https://img.freepik.com/free-photo/business-woman-standing-full-length-white-background_231208-2024.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
+        price: "$69.99",
+        discountPrice: "$49.99",
+        category: "women",
+        subcategory: "Casual Shoes",
+        brands: "Masch Sports",
+        color:"White"
+    },
+    {
+        id: 55,
+        name: "Women Jeans",
+        image: "https://img.freepik.com/free-photo/full-length-smiling-curly-woman-posing-white-wall_171337-2626.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "women",
@@ -540,15 +562,15 @@ const products = [
         color:"Grey"
     },
     {
-        id: 54,
-        name: "Women Shoes",
-        image: "img/women-catagories/w-Shoes.webp",
+        id: 56,
+        name: "Women Jeans",
+        image: "https://img.freepik.com/free-photo/beautiful-smiling-person-portrait_1303-2275.jpg?uid=R188445953&ga=GA1.1.1239189246.1740138222&semt=ais_hybrid",
         price: "$69.99",
         discountPrice: "$49.99",
         category: "women",
-        subcategory: "Casual Shoes",
-        brands: "Masch Sports",
-        color:"White"
+        subcategory: "Jeans",
+        brands: "Pepe jeans",
+        color:"Black"
     }
 ];
 
@@ -652,10 +674,10 @@ return;
 // Render filtered products
 filteredProducts.forEach(product => {
 const productCard = document.createElement("div");
-productCard.className = "group bg-white h-[340px] p-4 rounded-lg shadow-md text-center relative";
+productCard.className = "group bg-white h-[360px] p-4 rounded-lg shadow-md text-center relative";
 
 productCard.innerHTML = `
-    <img src="${product.image}" alt="${product.name}" class="w-full h-auto object-cover h-60 rounded-lg">
+    <img src="${product.image}" alt="${product.name}" class="w-full h-auto object-cover h-64 rounded-lg">
     
     <!-- Name, Wishlist & Price Container -->
     <div class="mt-2 transition-opacity duration-300 relative">
