@@ -653,8 +653,8 @@
     <!-- --------------------------home Page------------------------------- -->
     <div  id="home" class="flex flex-col justify-center items-center w-full mt-20 md:mt-20">
         <div class="px-2">
-            <img src="./Img/Pic1.webp" class="" alt="Error 404" />
-            <img src="./Img/Pic2.webp" class="" alt="Error 404" />
+            <img src="./Img/Pic1.webp" class="h-36 md:h-auto" alt="Error 404" />
+            <img src="./Img/Pic2.webp" class="h-12 md:h-auto" alt="Error 404" />
 
             <!-- ----------------------------------------------------- -->
             <div onclick="redirectToFilter()" id="Home_imgs"
@@ -709,45 +709,36 @@
 
         <!------------------- Home page ---------------------------------->
 
-        <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <div id="default-carousel" class="relative w-full mt-6" data-carousel="slide">
             <!-- Carousel wrapper -->
-            <div onclick="redirectToFilter()" class="relative h-44 overflow-hidden rounded-lg md:h-96 mx-24">
+            <div onclick="redirectToFilter()" class="relative h-44 overflow-hidden rounded-lg md:h-96 mx-4 md:mx-24">
                 <!-- Item 1 -->
-
-                <!-- Item 3 -->
-                <div class=" duration-1000 ease-in-out flex justify-center items-center space-x-4" data-carousel-item>
-                    <img src="./Img/H&M.webp" class="w-1/4 h-auto rounded-lg" alt="Casual Shoes">
-                    <img src="./Img/Mango-Trendoyal.webp" class="w-1/4 h-auto rounded-lg" alt="Captivating">
-                    <img src="./Img/anamor.webp" class="w-1/4 h-auto rounded-lg" alt="Titan Casio">
-                    <img src="./Img/Home-sizzler.webp" class="w-1/4 h-auto rounded-lg" alt="Arrow Shoes">
+                <div class="duration-1000 ease-in-out flex justify-center items-center space-x-4" data-carousel-item>
+                    <img src="./Img/H&M.webp" class="w-full sm:w-3/4 md:w-1/4 h-auto rounded-lg" alt="Casual Shoes">
+                    <img src="./Img/Mango-Trendoyal.webp" class="hidden sm:block w-full sm:w-3/4 md:w-1/4 h-auto rounded-lg" alt="Captivating">
+                    <img src="./Img/anamor.webp" class="hidden md:block w-1/4 h-auto rounded-lg" alt="Titan Casio">
+                    <img src="./Img/Home-sizzler.webp" class="hidden md:block w-1/4 h-auto rounded-lg" alt="Arrow Shoes">
                 </div>
-                <!-- Item 4 (Grid View) -->
-                <div class=" duration-700 ease-in-out flex justify-center items-center space-x-4" data-carousel-item>
-                    <img src="./Img/Jauger.webp" class="w-1/4 h-auto rounded-lg" alt="Casual Shoes">
-                    <img src="./Img/here&now.webp" class="w-1/4 h-auto rounded-lg" alt="Captivating">
-                    <img src="./Img/tavvi.webp" class="w-1/4 h-auto rounded-lg" alt="Titan Casio">
-                    <img src="./Img/Lives-jockey.webp" class="w-1/4 h-auto rounded-lg" alt="Arrow Shoes">
+                <!-- Item 2 -->
+                <div class="duration-700 ease-in-out flex justify-center items-center space-x-4" data-carousel-item>
+                    <img src="./Img/Jauger.webp" class="w-full sm:w-3/4 md:w-1/4 h-auto rounded-lg" alt="Casual Shoes">
+                    <img src="./Img/here&now.webp" class="hidden sm:block w-full sm:w-3/4 md:w-1/4 h-auto rounded-lg" alt="Captivating">
+                    <img src="./Img/tavvi.webp" class="hidden md:block w-1/4 h-auto rounded-lg" alt="Titan Casio">
+                    <img src="./Img/Lives-jockey.webp" class="hidden md:block w-1/4 h-auto rounded-lg" alt="Arrow Shoes">
                 </div>
-
             </div>
+        
             <!-- Slider indicators -->
             <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                <button type="button" class="w-3 h-3 rounded-full bg-gray-400" aria-label="Slide 1"
-                    data-carousel-slide-to="0"></button>
-                <button type="button" class="w-3 h-3 rounded-full bg-gray-400" aria-label="Slide 2"
-                    data-carousel-slide-to="1"></button>
-                <button type="button" class="w-3 h-3 rounded-full bg-gray-400" aria-label="Slide 3"
-                    data-carousel-slide-to="2"></button>
-                <button type="button" class="w-3 h-3 rounded-full bg-gray-400" aria-label="Slide 4"
-                    data-carousel-slide-to="3"></button>
-
+                <button type="button" class="w-3 h-3 rounded-full bg-gray-400" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full bg-gray-400" aria-label="Slide 2" data-carousel-slide-to="1"></button>
             </div>
+        
             <!-- Slider controls -->
             <button type="button"
                 class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                 data-carousel-prev>
-                <span
-                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50">
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50">
                     <svg class="w-4 h-4 text-white" viewBox="0 0 6 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M5 1 1 5l4 4" />
@@ -757,8 +748,7 @@
             <button type="button"
                 class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
                 data-carousel-next>
-                <span
-                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50">
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50">
                     <svg class="w-4 h-4 text-white" viewBox="0 0 6 10">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="m1 9 4-4-4-4" />
@@ -766,6 +756,7 @@
                 </span>
             </button>
         </div>
+        
 
     </div>
 
@@ -779,7 +770,7 @@
         </div>
         <div id="Shop_by_Catagory" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 mx-4 sm:mx-8 md:mx-12 gap-4 md:gap-2">
 
-            <div class="relative border-4 border-red-600 md:w-40 w-36 overflow-hidden">
+            <div class="relative border-4 border-red-600 md:w-auto w-auto overflow-hidden">
              <img onclick="redirectToFilter('women')" src="Img/women-catagories/sareas2.webp" alt="Casual Wear" class="w-full h-44">
 
                 <div class="bottom-0 w-full bg-red-600 text-white text-center ">
@@ -790,7 +781,7 @@
             </div>
 
            
-            <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
+            <div class="relative border-4 border-red-600 md:w-auto w-auto   overflow-hidden">
                 <img onclick="redirectToFilter('women')" src="Img/women-catagories/w-Jacket.webp" alt="Casual Wear" class="w-full h-44">
    
                    <div class="bottom-0 w-full bg-red-600 text-white text-center ">
@@ -801,7 +792,7 @@
                </div>
                
 
-               <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
+               <div class="relative border-4 border-red-600 md:w-auto w-auto   overflow-hidden">
                 <img onclick="redirectToFilter('women')" src="Img/women-catagories/w-Shoes.webp" alt="Casual Wear" class="w-full h-44">
    
                    <div class="bottom-0 w-full bg-red-600 text-white text-center ">
@@ -811,7 +802,7 @@
                    </div>
                </div>
            
-               <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
+               <div class="relative border-4 border-red-600 md:w-auto w-auto   overflow-hidden">
                 <img onclick="redirectToFilter('women')" src="Img/women-catagories/w-Trouser3.webp" alt="Casual Wear" class="w-full h-44">
    
                    <div class="bottom-0 w-full bg-red-600 text-white text-center ">
@@ -822,7 +813,7 @@
                </div>
 
 
-               <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
+               <div class="relative border-4 border-red-600 md:w-auto w-auto   overflow-hidden">
                 <img onclick="redirectToFilter('women')" src="Img/women-catagories/w-Tshirt.webp" alt="Casual Wear" class="w-full h-44">
    
                    <div class="bottom-0 w-full bg-red-600 text-white text-center ">
@@ -833,7 +824,7 @@
                </div>
            
 
-               <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
+               <div class="relative border-4 border-red-600 md:w-auto w-auto   overflow-hidden">
                 <img onclick="redirectToFilter('women')" src="Img/women-catagories/sareas4.webp" alt="Casual Wear" class="w-full h-44">
    
                    <div class="bottom-0 w-full bg-red-600 text-white text-center ">
@@ -843,17 +834,9 @@
                    </div>
                </div>
            
-               <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
-                <img onclick="redirectToFilter('women')" src="Img/Men-catagories/shirt_4.webp" alt="Casual Wear" class="w-full h-44">
-   
-                   <div class="bottom-0 w-full bg-red-600 text-white text-center ">
-                       <p class="text-sm font-semibold">Casual Wear</p>
-                       <p class="text-lg font-extrabold">40-80% OFF</p>
-                       <p class="text-sm font-medium pb-1">Shop Now</p>
-                   </div>
-               </div>
             
-               <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
+            
+               <div class="relative border-4 border-red-600 md:w-auto w-auto   overflow-hidden">
                 <img onclick="redirectToFilter('women')" src="Img/women-catagories/sareas2.webp" alt="Casual Wear" class="w-full h-44">
    
                    <div class="bottom-0 w-full bg-red-600 text-white text-center ">
@@ -863,7 +846,7 @@
                    </div>
                </div>
 
-               <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
+               <div class="relative border-4 border-red-600 md:w-auto w-auto   overflow-hidden">
                 <img onclick="redirectToFilter('women')" src="Img/women-catagories/w-Jacket4.webp" alt="Casual Wear" class="w-full h-44">
    
                    <div class="bottom-0 w-full bg-red-600 text-white text-center ">
@@ -874,7 +857,7 @@
                </div>
            
 
-               <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
+               <div class="relative border-4 border-red-600 md:w-auto w-auto   overflow-hidden">
                 <img onclick="redirectToFilter('women')" src="Img/women-catagories/sareas3.webp" alt="Casual Wear" class="w-full h-44">
    
                    <div class="bottom-0 w-full bg-red-600 text-white text-center ">
@@ -885,7 +868,7 @@
                </div>
 
             
-               <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
+               <div class="relative border-4 border-red-600 md:w-auto w-auto   overflow-hidden">
                 <img onclick="redirectToFilter('women')" src="Img/women-catagories/w-Trouser.webp" alt="Casual Wear" class="w-full h-44">
    
                    <div class="bottom-0 w-full bg-red-600 text-white text-center ">
@@ -897,7 +880,7 @@
 
             
           
-               <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
+               <div class="relative border-4 border-red-600 md:w-auto w-auto   overflow-hidden">
                 <img onclick="redirectToFilter('women')" src="Img/women-catagories/sareas3.webp" alt="Casual Wear" class="w-full h-44">
    
                    <div class="bottom-0 w-full bg-red-600 text-white text-center ">
@@ -909,7 +892,7 @@
            
             
             
-            <div class="relative border-4 border-red-600 md:w-40 w-36   overflow-hidden">
+            <div class="relative border-4 border-red-600 md:w-auto w-auto   overflow-hidden">
                 <img onclick="redirectToFilter('women')" src="Img/women-catagories/sareas3.webp" alt="Casual Wear" class="w-full h-44">
    
                    <div class="bottom-0 w-full bg-red-600 text-white text-center ">
