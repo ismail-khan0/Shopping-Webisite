@@ -23,14 +23,14 @@
     </header>
 
     <!-- Wishlist Section -->
-    <div class="container mx-auto p-4 flex gap-6">
+    <div class="container mx-auto p-4 flex flex-col lg:flex-row gap-6">
         <!-- Wishlist Items -->
-        <div class="w-3/4 grid grid-cols-3 gap-4" id="wishlist-container">
+        <div class="w-full lg:w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="wishlist-container">
             <!-- Wishlist items will be dynamically added here -->
         </div>
 
         <!-- Price Summary Section -->
-        <div class="w-1/4 bg-white p-4 rounded-lg shadow-md h-fit">
+        <div class="w-full lg:w-1/4 bg-white p-4 rounded-lg shadow-md h-fit">
             <h2 class="text-lg font-semibold mb-2">Wishlist Total</h2>
             <p class="text-red-500 text-2xl font-bold">Total: $<span id="total-price">0</span></p>
         </div>

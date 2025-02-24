@@ -24,16 +24,27 @@
                     <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
                 </a>
                 <div class="flex md:order-2">
-                    <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search"
-                        aria-expanded="false"
-                        class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1">
-                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 20 20">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
-                        </svg>
-                        <span class="sr-only">Search</span>
-                    </button>
+                    <ul class="flex gap-4 items-center justify-center mr-2">
+                        <li class="relative group md:hidden block ">
+                            <a href="Wishlist.html" class="block flex flex-col items-center  h-auto py-0 gap-0 text-gray-900 rounded-sm 
+                                               hover:bg-gray-100 md:hover:bg-transparent  md:py-4 
+                                               md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 
+                                               dark:hover:text-white md:dark:hover:bg-transparent">
+                            <i class="fa-regular fa-heart text-sm"></i>
+                            <span class="text-sm">Wishlist</span>
+                        </a>
+                    </li>
+                    <li class="relative group md:hidden block " >
+                        <a href="" onclick="window.location.href='Signin.html'" class="block flex flex-col items-center  h-auto py-0 gap-0 text-gray-900 rounded-sm 
+                                           hover:bg-gray-100 md:hover:bg-transparent  md:py-4 
+                                           md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 
+                                           dark:hover:text-white md:dark:hover:bg-transparent">
+                            <i class="fa-regular fa-user text-sm"></i>
+                            <span class="text-sm">Profile</span>
+                            <span class="absolute bottom-0 left-0 w-0 h-[3px] bg-red-500  group-hover:w-full"></span>
+                        </a>
+                        </li>
+                </ul>
                     <div class="relative hidden md:block">
                         <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                             <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
