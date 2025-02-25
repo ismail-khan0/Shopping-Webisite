@@ -57,9 +57,9 @@
                 totalPrice += price; // Add to total price
 
                 const productCard = document.createElement("div");
-                productCard.className = "bg-white p-4 rounded-lg shadow-md text-center";
+                productCard.className = "bg-white p-4 rounded-lg shadow-md h-92 text-center";
                 productCard.innerHTML = `
-                    <img src="${product.image}" alt="${product.name}" class="w-full h-auto object-cover rounded-lg">
+                    <img src="${product.image}" alt="${product.name}" class="w-full h-72 object-cover rounded-lg">
                     <h3 class="text-lg font-semibold">${product.name}</h3>
                     <p class="text-red-500 text-xl font-bold">$${product.discountPrice} 
                         <span class="text-gray-400 line-through text-sm">$${product.price}</span>

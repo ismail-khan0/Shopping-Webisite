@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/Style.css">
     <link rel="icon" href="Img/Home&Living/favicon.ico">
 </head>
+
 <body class="bg-white">
     <nav id="header"
         class="fixed top-0 left-0 w-full z-50 bg-white border-gray-200 shadow-sm shadow-gray-200/50 dark:bg-gray-900">
@@ -28,21 +29,21 @@
                                            hover:bg-gray-100 md:hover:bg-transparent  md:py-4 
                                            md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 
                                            dark:hover:text-white md:dark:hover:bg-transparent">
-                        <i class="fa-regular fa-heart text-sm"></i>
-                        <span class="text-sm">Wishlist</span>
-                    </a>
-                </li>
-                <li class="relative group md:hidden block ">
-                    <a href="#" onclick="window.location.href='Signin.html'" class="block flex flex-col items-center  h-auto py-0 gap-0 text-gray-900 rounded-sm 
+                            <i class="fa-regular fa-heart text-sm"></i>
+                            <span class="text-sm">Wishlist</span>
+                        </a>
+                    </li>
+                    <li class="relative group md:hidden block ">
+                        <a href="#" onclick="window.location.href='Signin.html'" class="block flex flex-col items-center  h-auto py-0 gap-0 text-gray-900 rounded-sm 
                                        hover:bg-gray-100 md:hover:bg-transparent  md:py-4 
                                        md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 
                                        dark:hover:text-white md:dark:hover:bg-transparent">
-                        <i class="fa-regular fa-user text-sm"></i>
-                        <span class="text-sm">Profile</span>
-                        <span class="absolute bottom-0 left-0 w-0 h-[3px] bg-red-500  group-hover:w-full"></span>
-                    </a>
+                            <i class="fa-regular fa-user text-sm"></i>
+                            <span class="text-sm">Profile</span>
+                            <span class="absolute bottom-0 left-0 w-0 h-[3px] bg-red-500  group-hover:w-full"></span>
+                        </a>
                     </li>
-            </ul>
+                </ul>
                 <div class="relative hidden md:block">
                     <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                         <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
@@ -91,8 +92,10 @@
                             <span class="absolute bottom-0 left-0 w-0 h-[3px] bg-orange-600  group-hover:w-full"></span>
                         </a>
                         <!-- Dropdown Menu for Men-->
-                        <div id="men"  onclick="redirectToFilter('men')" 
-                            class="absolute left-0 hidden group-hover:grid grid-cols-5 gap-6 bg-white shadow-lg min-w-[1000px] p-6 border border-gray-200 mt-0">
+                        <div id="men" onclick="redirectToFilter('men')" class="absolute left-0 opacity-0 scale-95 pointer-events-none transition-all duration-300 ease-in-out
+    md:group-hover:opacity-100 md:group-hover:scale-100 md:group-hover:pointer-events-auto
+    hover:opacity-100 hover:scale-100 hover:pointer-events-auto
+    grid grid-cols-5 gap-6 bg-white shadow-lg min-w-[1000px] p-6 border border-gray-200 mt-0 cursor-pointer">
                             <!-- Topwear -->
                             <div>
                                 <h3 class="grid text-orange-600">Topwear</h3>
@@ -206,8 +209,8 @@
                             <span class="absolute bottom-0 left-0 w-0 h-[3px] bg-pink-600  group-hover:w-full"></span>
                         </a>
                         <!------------------------------------------ Dropdown Menu for Women -------------------->
-                        <div id="women"  onclick="redirectToFilter('women')" 
-                            class="absolute left-[-73px] hidden group-hover:grid grid-cols-5 gap-6 bg-white shadow-lg min-w-[1000px] p-6 border border-gray-200 mt-0">
+                        <div id="women" onclick="redirectToFilter('women')"
+                            class="absolute left-[-73px] hidden group-hover:grid grid-cols-5 gap-6 bg-white shadow-lg min-w-[1000px] p-6 border border-gray-200 mt-0 cursor-pointer">
                             <!-- Pakistan & Fusion Wear -->
                             <div>
                                 <h3 class="font-bold text-pink-600">Pakistan & Fusion Wear</h3>
@@ -297,7 +300,7 @@
 
                         <!------------------------------------------ Dropdown Menu for Kids -------------------->
                         <div onclick="window.location.href='Kids.html'"
-                            class="absolute left-[-170px] hidden group-hover:grid grid-cols-5 gap-6 bg-white shadow-lg min-w-[1000px] p-6 border border-gray-200 mt-0">
+                            class="absolute left-[-170px] hidden group-hover:grid grid-cols-5 gap-6 bg-white shadow-lg min-w-[1000px] p-6 border border-gray-200 mt-0 cursor-pointer">
                             <!-- Boys Clothings -->
                             <div>
                                 <h3 class="font-bold text-orange-400">Boys Clothing</h3>
@@ -434,7 +437,7 @@
 
                         <!-- Dropdown Menu for Home and Living-->
                         <div div onclick="window.location.href='Home.html'"
-                            class="absolute left-[-240px] hidden group-hover:grid grid-cols-5 gap-6 bg-white shadow-lg min-w-[1000px] p-6 border border-gray-200 mt-0">
+                            class="absolute left-[-240px] hidden group-hover:grid grid-cols-5 gap-6 bg-white shadow-lg min-w-[1000px] p-6 border border-gray-200 mt-0 cursor-pointer">
                             <!-- Topwear -->
                             <div>
                                 <h3 class="font-bold text-yellow-400">Bed Linen & Furnishing</h3>
@@ -648,7 +651,8 @@
     <div class="max-w-7xl mx-auto p-4 mt-16">
         <!-- Main Ad Section -->
         <div class="flex flex-col md:flex-row items-center bg-gray-100 p-0 md:p-6 rounded-lg">
-            <img src="Img/Kids/explore-more-kids/h-kids.webp" alt="Innerwear Ad" class="w-full h-40 md:h-auto md:w-full rounded-lg">
+            <img src="Img/Kids/explore-more-kids/h-kids.webp" alt="Innerwear Ad"
+                class="w-full h-40 md:h-auto md:w-full rounded-lg">
 
         </div>
 
@@ -865,10 +869,10 @@
         <!-- <script></script> -->
         <script>
             function redirectToFilter(Catagory) {
-   localStorage.setItem("filterCategory", Catagory); // Store "women" category in localStorage
-   window.location.href = "filter.html"; // Redirect to filter page
- }
-         </script>
+                localStorage.setItem("filterCategory", Catagory); // Store "women" category in localStorage
+                window.location.href = "filter.html"; // Redirect to filter page
+            }
+        </script>
 </body>
 
 </html>
